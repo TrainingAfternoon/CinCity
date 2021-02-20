@@ -3,6 +3,6 @@
 Read me for the competitive programming team CinCity based out of the Milwaukee School of Engineering.
 
 ## Members: ##
-- Mitchell Johstone
+- Mitchell Johnstone
 - Sam Keyser
 - Jonny Keane
