@@ -22,6 +22,6 @@ int main() {
     cout << "String Length 2: " << s.length() << endl;
     // getchar() gives me a character from input
     cout << "a" << nl << "b" << nl;
-    // template
+    // template testing nl instead of endl
     return 0;
 }
