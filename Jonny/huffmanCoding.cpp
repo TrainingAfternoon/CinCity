@@ -1,10 +1,14 @@
+/**
+ * Kind of whack Huffman Coding, but it does work
+ * Creates a tree structure among connected nodes to create codes for characters that can appear in a word
+ * @param s The word that you are giving
+ */
 void huffmanCode(string s) {
     struct node {
         char val;
         int count;
-//        bool path;
-        struct node* left;
-        struct node* right;
+        node* left;
+        node* right;
     public: node(char c, int i) {
             val = c;
             count = i;
@@ -25,38 +29,38 @@ void huffmanCode(string s) {
         nodes.emplace_back(p.first, p.second);
     }
     auto sortRule = [] (node const& s1, node const& s2) -> bool {
-        return s1.count < s2.count;
+        return s1.count > s2.count;
     };
     sort(nodes.begin(), nodes.end(), sortRule);
-    node start = node(0, nodes[0].count + nodes[1].count);
-    start.right = &nodes[0];
-    start.left = &nodes[1];
-    int i = 2;
-    while (i < nodes.size()) {
-        node temp = node(0, nodes[i].count + start.count);
-        temp.left = &nodes[i];
-        temp.right = &start;
-        cout << temp.right->count;
-        start = temp;
-        ++i;
+    node root = node(0, 0);
+    // creating the tree
+    node *curr = &root;
+    for (int i = 0; i < nodes.size() - 1; ++i) {
+        curr->left = &nodes[i];
+        curr->right = (node *) malloc(sizeof(node));
+        curr->right->val = 0;
+        curr->right->count = 0;
+        curr = curr->right;
     }
-
-//    for (auto p: vals) {
-//        string res;
-//        char c = p.first;
-//        node *curr = &start;
-//        node *find = curr -> right;
-//        cout << find -> left -> val;
-//        while (curr->val != c && curr->right != nullptr) {
-//            if (curr->left->val == c) {
-//                res += "0";
-//                curr = curr->left;
-//            } else {
-//                res += "1";
-//                curr = curr->right;
-//                cout << curr -> left -> val;
-//            }
-//        }
-//        cout << res;
-//    }
+    curr = &nodes[nodes.size()-1];
+    /*
+     * OUTPUT:
+     *  - prints out the code for each character
+     */
+    for (auto p: vals) {
+        node *trace = &root;
+        char c = p.first;
+        cout << c << ": ";
+        string res;
+        while (c != trace->val && trace->right != nullptr) {
+            if (trace->left->val == c) {
+                res += "0";
+                trace = trace->left;
+            } else {
+                res += "1";
+                trace = trace->right;
+            }
+        }
+        cout << res << nl;
+    }
 }
