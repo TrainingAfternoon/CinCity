@@ -24,14 +24,14 @@ public:
         i = (i * a) % mod;
         return *this;
     }
-    PModInt operator* (PModInt pModInt) {
+    PModInt inline operator* (PModInt pModInt) {
         return *this * pModInt.i;
     }
     PModInt operator/ (PModInt pModInt) {
         int c = pModInt.modInv();
         return *this * c;
     }
-    PModInt operator/ (int a) {
+    PModInt inline operator/ (int a) {
         return *this / PModInt(a, mod);
     }
     string toString() {
