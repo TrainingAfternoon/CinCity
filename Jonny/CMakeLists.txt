@@ -4,3 +4,4 @@ project(Jonny)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Jonny helloWorld.cpp)
+add_executable(Euler PracticeNCNA/eulers.cpp)
