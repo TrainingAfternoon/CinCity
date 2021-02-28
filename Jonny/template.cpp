@@ -22,10 +22,13 @@
 // loops
 #define WHILE(n) while(n--)
 #define FOR(a) for(ll i=0;i<a;i++)
+#define FIND(a, e) find(a.begin(), a.end(), e)
 #define minimum(a) *min_element(a.begin(), a.end())
 #define maximum(a) *max_element(a.begin(), a.end())
 
 #define nl '\n'
+
+const double PI = 3.1415926585323;
 
 using namespace std;
 

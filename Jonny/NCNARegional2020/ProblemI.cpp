@@ -25,6 +25,7 @@
 
 #define nl '\n'
 const double PI = 3.1415926585323;
+#define FIND(a, e) find(a.begin(), a.end(), e)
 
 
 using namespace std;
