@@ -41,10 +41,10 @@ bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
     return a.totalDist < b.totalDist;
 }
 
-pair<int, int> DFS(int curr, vector<DijstrasStep> *graph_) {
+pair<int, ll> DFS(int curr, vector<DijstrasStep> *graph_) {
     vi visited;
-//    visited.pb(curr);
-    int sum = 0;
+    visited.pb(curr);
+    ll sum = 0;
     while (true) {
         int count = 0;
         priority_queue<DijstrasStep> pq;
@@ -73,7 +73,7 @@ int main() {
     int edges = GRAPH_LENGTH - 1;
 
     vector<DijstrasStep> graph_[GRAPH_LENGTH];
-    int sum;
+    ll sum = 0;
     for (int i = 0; i < edges; i++) {
         int nodeA, nodeB, weight;
         cin >> nodeA >> nodeB >> weight;
@@ -88,6 +88,5 @@ int main() {
     } else {
         cout << DFS(DFS(0, graph_).first, graph_).second;
     }
-
     return 0;
 }
