@@ -4,7 +4,6 @@
 
 #include <bits/stdc++.h>
 
-
 #define ll long long
 #define ld long double
 #define pb push_back
@@ -28,7 +27,7 @@
 
 #define nl '\n'
 
-const double PI = 3.1415926585323;
+// use M_PI for PI
 
 using namespace std;
 

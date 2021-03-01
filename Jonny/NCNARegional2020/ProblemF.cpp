@@ -43,7 +43,7 @@ bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
 
 pair<int, int> DFS(int curr, vector<DijstrasStep> *graph_) {
     vi visited;
-    visited.pb(curr);
+//    visited.pb(curr);
     int sum = 0;
     while (true) {
         int count = 0;
