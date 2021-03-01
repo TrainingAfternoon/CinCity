@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <math.h>
 #include <string> 
 #include <vector> 
 #include <set> 
@@ -34,8 +35,6 @@
 #define repk(a) for(ll k = 0; k < a; k++)
 #define minimum(a) *min_element(a.begin(), a.end())
 #define maximum(a) *max_element(a.begin(), a.end())
-#define in_map(m,e) (m.find(e) == m.end())
-#define findchar(s,c) s.find(c)==string::npos?-1:s.find(c);
 
 using namespace std;
 // constants
@@ -44,20 +43,30 @@ const int MOD = 1e9 + 7;
 
 // functs
 ll power(ll a, ll n, ll mod) {ll p = 1;while (n > 0) {if(n%2) {p = p * a; p %= mod;} n >>= 1; a *= a; a %= mod;} return p % mod;} 
-// trim from start (in place)
-static inline void ltrim(std::string &s) {s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {return !std::isspace(ch);}));}
-// trim from end (in place)
-static inline void rtrim(std::string &s) {s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char ch) {return !std::isspace(ch);}).base(), s.end());}
-// trim from both ends (in place)
-static inline void trim(std::string &s) {ltrim(s);rtrim(s);}
-
 void fastinput(){ios_base::sync_with_stdio(0); cout.tie(0); cin.tie(0);}
 
+
 // -------------------MAIN CODE-------------------//
+
 int main(){
-    fastinput();
+    //fastinput();
 
     //---------SOLUTION----------//
+   
+    string line;
+    double S;
+    int R;
+     
+    while(cin>>R>>S){//getline(cin,line)){
+        //size_t i = line.find(' ');
+        //R = stoi(line.substr(0,i));
+        //S = stod(line.substr(i+2));
+        //cout<<R<<" "<<S;
+        double v = pow(R*(S+.16)/.067,.5);
+        int _v = (int)(v+.5);
+        cout<<_v<<nn;
+    }
 
     return 0;
 }
+

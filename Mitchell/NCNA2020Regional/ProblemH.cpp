@@ -34,8 +34,6 @@
 #define repk(a) for(ll k = 0; k < a; k++)
 #define minimum(a) *min_element(a.begin(), a.end())
 #define maximum(a) *max_element(a.begin(), a.end())
-#define in_map(m,e) (m.find(e) == m.end())
-#define findchar(s,c) s.find(c)==string::npos?-1:s.find(c);
 
 using namespace std;
 // constants
@@ -44,20 +42,49 @@ const int MOD = 1e9 + 7;
 
 // functs
 ll power(ll a, ll n, ll mod) {ll p = 1;while (n > 0) {if(n%2) {p = p * a; p %= mod;} n >>= 1; a *= a; a %= mod;} return p % mod;} 
-// trim from start (in place)
-static inline void ltrim(std::string &s) {s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {return !std::isspace(ch);}));}
-// trim from end (in place)
-static inline void rtrim(std::string &s) {s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char ch) {return !std::isspace(ch);}).base(), s.end());}
-// trim from both ends (in place)
-static inline void trim(std::string &s) {ltrim(s);rtrim(s);}
-
 void fastinput(){ios_base::sync_with_stdio(0); cout.tie(0); cin.tie(0);}
 
+
 // -------------------MAIN CODE-------------------//
+
 int main(){
-    fastinput();
+    //fastinput();
 
     //---------SOLUTION----------//
+    
 
+    double tf, tr, last_s, s;
+    int i, j, index = 0;
+    //vpii prev;
+    V<double> past;
+
+    cin>>tf>>tr;
+    while(cin>>s){
+        i = (int)s;
+        j = i+1;
+
+        if(s == 0){
+            cout<<0<<nn;
+        } else if (s < 1){
+            cout<<1<<nn;
+        } else if(s < i+tf){
+            cout<<i<<nn;
+        } else if (s > i+tr){
+            cout<<j<<nn;
+        } else {
+            for(int k = index-1; k>=0; k--){
+                if(past[k] < (i+tf)){
+                    cout<<i<<nn;
+                    break;
+                } else if(past[k] > (i+tr)){
+                    cout<<j<<nn;
+                    break;
+                }
+            }
+        }
+        past.pb(s);
+        index++;
+    }
     return 0;
 }
+
