@@ -42,24 +42,24 @@ bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
 }
 
 pair<int, ll> DFS(int curr, vector<DijstrasStep> *graph_) {
-    vi visited;
-    visited.pb(curr);
     ll sum = 0;
     while (true) {
-        int count = 0;
-        priority_queue<DijstrasStep> pq;
-        for (DijstrasStep d: graph_[curr]) {
-            if (FIND(visited, d.nodeID) == visited.end()) {
-                pq.push(d);
-//                cout << d.nodeID << ", " << d.totalDist << nl;
-                count++;
+        int next = 0;
+        for (int i = 0; i < graph_[curr].size(); ++i) { // finds the maximum
+            if (graph_[curr][i].totalDist > graph_[curr][next].totalDist) {
+                next = i;
             }
         }
-        if (count == 0) break;
-        curr = pq.top().nodeID;
-        visited.pb(curr);
-        sum += pq.top().totalDist;
-//        cout << "\tS: " << sum << nl;
+        int nextNode = graph_[curr][next].nodeID;
+        if (graph_[curr][next].totalDist == 0) break;
+        sum += graph_[curr][next].totalDist;
+        for (int i = 0; i < graph_[nextNode].size(); ++i) { // finds the other direction to remove
+            if (graph_[nextNode][i].nodeID == curr) {
+                graph_[nextNode][i].totalDist = 0;
+            }
+        }
+        graph_[curr][next].totalDist = 0;
+        curr = nextNode;
     }
     return make_pair(curr, sum);
 }
@@ -73,6 +73,7 @@ int main() {
     int edges = GRAPH_LENGTH - 1;
 
     vector<DijstrasStep> graph_[GRAPH_LENGTH];
+    vector<DijstrasStep> graph_copy[GRAPH_LENGTH];
     ll sum = 0;
     for (int i = 0; i < edges; i++) {
         int nodeA, nodeB, weight;
@@ -82,11 +83,13 @@ int main() {
         sum += weight;
         graph_[nodeA].pb(DijstrasStep(nodeB, weight));
         graph_[nodeB].pb(DijstrasStep(nodeA, weight));
+        graph_copy[nodeA].pb(DijstrasStep(nodeB, weight));
+        graph_copy[nodeB].pb(DijstrasStep(nodeA, weight));
     }
     if (k >= 2) {
         cout << sum;
     } else {
-        cout << DFS(DFS(0, graph_).first, graph_).second;
+        cout << DFS(DFS(0, graph_).first, graph_copy).second;
     }
     return 0;
 }
