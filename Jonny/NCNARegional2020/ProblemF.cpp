@@ -42,7 +42,7 @@ bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
 }
 
 pair<int, ll> DFS(int curr, vector<pair<int, int>> *graph_) {
-    int sum = 0;
+    ll sum = 0;
     vector<int> visited;
     stack<DijstrasStep> pq; // prev
     pq.push(DijstrasStep(curr, 0));
@@ -52,7 +52,7 @@ pair<int, ll> DFS(int curr, vector<pair<int, int>> *graph_) {
         if (EXISTS(visited, top.nodeID)) {
             continue;
         }
-        if (top.totalDist > sum) {
+        if (top.totalDist >= sum) {
             sum = top.totalDist;
             curr = top.nodeID;
         }
