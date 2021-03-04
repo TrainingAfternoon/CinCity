@@ -23,7 +23,7 @@
 #define FOR(a) for(ll i=0;i<a;i++)
 #define minimum(a) *min_element(a.begin(), a.end())
 #define maximum(a) *max_element(a.begin(), a.end())
-#define FIND(a, e) find(a.begin(), a.end(), e)
+#define EXISTS(a, e) find(a.begin(), a.end(), e) != a.end()
 
 #define nl '\n'
 
@@ -41,25 +41,25 @@ bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
     return a.totalDist < b.totalDist;
 }
 
-pair<int, ll> DFS(int curr, vector<DijstrasStep> *graph_) {
+pair<int, ll> DFS(int curr, vector<pair<int, int>> *graph_) {
     ll sum = 0;
-    while (true) {
-        int next = 0;
-        for (int i = 0; i < graph_[curr].size(); ++i) { // finds the maximum
-            if (graph_[curr][i].totalDist > graph_[curr][next].totalDist) {
-                next = i;
-            }
+    vector<int> visited;
+    stack<DijstrasStep> pq; // prev
+    pq.push(DijstrasStep(curr, 0));
+    while(!pq.empty()) {
+        auto top = pq.top();
+        pq.pop();
+        if (EXISTS(visited, top.nodeID)) {
+            continue;
         }
-        int nextNode = graph_[curr][next].nodeID;
-        if (graph_[curr][next].totalDist == 0) break;
-        sum += graph_[curr][next].totalDist;
-        for (int i = 0; i < graph_[nextNode].size(); ++i) { // finds the other direction to remove
-            if (graph_[nextNode][i].nodeID == curr) {
-                graph_[nextNode][i].totalDist = 0;
-            }
+        if (top.totalDist >= sum) {
+            sum = top.totalDist;
+            curr = top.nodeID;
         }
-        graph_[curr][next].totalDist = 0;
-        curr = nextNode;
+        visited.pb(top.nodeID);
+        for (auto connection: graph_[top.nodeID]) {
+            pq.push(DijstrasStep(connection.first, top.totalDist + connection.second));
+        }
     }
     return make_pair(curr, sum);
 }
@@ -72,8 +72,8 @@ int main() {
     cin >> GRAPH_LENGTH >> k;
     int edges = GRAPH_LENGTH - 1;
 
-    vector<DijstrasStep> graph_[GRAPH_LENGTH];
-    vector<DijstrasStep> graph_copy[GRAPH_LENGTH];
+    vector<pair<int, int>> graph_[GRAPH_LENGTH];
+    vector<pair<int, int>> graph_copy[GRAPH_LENGTH];
     ll sum = 0;
     for (int i = 0; i < edges; i++) {
         int nodeA, nodeB, weight;
@@ -81,10 +81,10 @@ int main() {
         nodeA--;
         nodeB--;
         sum += weight;
-        graph_[nodeA].pb(DijstrasStep(nodeB, weight));
-        graph_[nodeB].pb(DijstrasStep(nodeA, weight));
-        graph_copy[nodeA].pb(DijstrasStep(nodeB, weight));
-        graph_copy[nodeB].pb(DijstrasStep(nodeA, weight));
+        graph_[nodeA].pb(make_pair(nodeB, weight));
+        graph_[nodeB].pb(make_pair(nodeA, weight));
+        graph_copy[nodeA].pb(make_pair(nodeB, weight));
+        graph_copy[nodeB].pb(make_pair(nodeA, weight));
     }
     if (k >= 2) {
         cout << sum;
