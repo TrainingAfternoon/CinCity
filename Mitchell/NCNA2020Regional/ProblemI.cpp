@@ -49,11 +49,11 @@ void fastinput(){ios_base::sync_with_stdio(0); cout.tie(0); cin.tie(0);}
 // -------------------MAIN CODE-------------------//
 
 int main(){
-    fastinput();
+    //fastinput();
 
     //---------SOLUTION----------//
     
-    cout<<fixed<<setprecision(5);
+    cout<<fixed;
 
     int n;
     double r, s, w, f, l1, l2,d;
@@ -71,7 +71,7 @@ int main(){
 
     double x,y,_d;
     while(cin>>_d){
-        cout<<_d;
+        cout<<setprecision(3)<<_d<<setprecision(4);
         for(int i = 0; i < n; i++){
             d = _d;
             //cout<<nn;
@@ -80,13 +80,13 @@ int main(){
             y = -1*_r;
             if(d<(f+.5*s)){
                 //cout<<"Made first check: ";
-                cout<<" "<<(f+.5*s-d)<<" "<<y;
+                cout<<" "<<(f-d)<<" "<<y;
                 continue;
             } 
             d-=f+.5*s;
             //now we're at bottom left
 
-            d-=((int)(d/distances[i][0])*distances[i][0]);
+            d-=((int)(d/distances[i][0]))*distances[i][0];
             //while(d > distances[i][0]){
             //    //cout<<"Made second check: ";
             //    d-=distances[i][0];
@@ -97,8 +97,6 @@ int main(){
             if(d >= distances[i][1]){
                 //cout<<"Made third check: "; 
                 d-=distances[i][1];
-                y=_r;
-                x=.5*s;
                 left = false; //now top right
             }
 
@@ -107,21 +105,20 @@ int main(){
                 d-=distances[i][2];
                 y*=-1;
                 //we're in the straight 
-                if(left){
-                    x+=d;
-                } else {
-                    x-=d;
-                }
+                x+=d;
             } else {
                 //in loop 
                 //cout<<"Made loop: "; 
                 
                 double l = i==0 ? l1 : l2;
                 double R = l+_r;
-                double theta = PI/2.0-d/R;
-                if(left) theta += PI;
+                double theta = PI/2.0-d/R + PI;
                 y = _r*sin(theta);
-                x+= _r*cos(theta);
+                x += _r*cos(theta);
+            }
+            if(!left){
+                x*=-1;
+                y*=-1;
             }
             cout<<" "<<x<<" "<<y;
         }
