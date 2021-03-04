@@ -61,15 +61,17 @@ vector<pair<double, double>> create_possibilities(int N, int d, int s, int t, in
                 new_eyelets[2 * (i / 2) + 1] = true;
                 step.currEyelets = new_eyelets;
                 step.currNode = i;
-                int separation = abs(curr.currNode - i);
-                int changeLevel = abs (curr.currNode / 2 - i /2);
-                if (separation % 2 == 1 || changeLevel == 1) {
+                int separation = i - curr.currNode;
+                int changeLevel = abs(curr.currNode / 2 - i /2);
+                if (!(changeLevel > 1 && separation % 2 == 0)) { // checks for redundancy
+//                    cout << curr.currNode + 2 << "->" << i + 2 << nl;
                     step.totalLength = separation % 2 == 0 ? 2 * changeLevel * d + curr.totalLength :
                                        2 * sqrt(pow(changeLevel * d, 2) + pow(s, 2)) + curr.totalLength;
                     stack_.push(step);
                 }
             }
         }
+//        cout << nl;
     }
     return res;
 }
