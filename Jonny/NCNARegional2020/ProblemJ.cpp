@@ -6,7 +6,6 @@
 #define ll long long
 #define ld long double
 #define pb push_back
-
 #define V vector
 #define vi V<int>
 #define vll V<ll>
