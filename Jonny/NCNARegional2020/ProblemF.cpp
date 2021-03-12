@@ -29,39 +29,19 @@
 
 using namespace std;
 
-class DijstrasStep {
-public:
-    DijstrasStep(int nodeID, int totalDist) : nodeID(nodeID), totalDist(totalDist) {};
-    int nodeID;
-    int totalDist;
-    friend bool operator<(const DijstrasStep& a, const DijstrasStep& b);
-};
+vector<vector<pair<ll, ll>>> graph_;
 
-bool operator<(const DijstrasStep& a, const DijstrasStep& b) {
-    return a.totalDist < b.totalDist;
-}
-
-pair<int, ll> DFS(int curr, vector<pair<int, int>> *graph_) {
-    ll sum = 0;
-    vector<int> visited;
-    stack<DijstrasStep> pq; // prev
-    pq.push(DijstrasStep(curr, 0));
-    while(!pq.empty()) {
-        auto top = pq.top();
-        pq.pop();
-        if (EXISTS(visited, top.nodeID)) {
-            continue;
-        }
-        if (top.totalDist >= sum) {
-            sum = top.totalDist;
-            curr = top.nodeID;
-        }
-        visited.pb(top.nodeID);
-        for (auto connection: graph_[top.nodeID]) {
-            pq.push(DijstrasStep(connection.first, top.totalDist + connection.second));
+pair<ll, ll> DFS(ll curr, ll m, ll prev) {
+    pair<ll, ll> res = make_pair(curr, m);
+    for (auto adj: ::graph_[curr]) {
+        if (adj.first != prev) {
+            pair<ll, ll> poss = DFS(adj.first, m + adj.second, curr);
+            if (poss.second > res.second) {
+                res = poss;
+            }
         }
     }
-    return make_pair(curr, sum);
+    return res;
 }
 
 int main() {
@@ -72,24 +52,25 @@ int main() {
     cin >> GRAPH_LENGTH >> k;
     int edges = GRAPH_LENGTH - 1;
 
-    vector<pair<int, int>> graph_[GRAPH_LENGTH];
-    vector<pair<int, int>> graph_copy[GRAPH_LENGTH];
     ll sum = 0;
+    for (int i = 0; i < GRAPH_LENGTH; ++i) {
+        vector<pair<ll, ll>> temp;
+        ::graph_.pb(temp);
+    }
     for (int i = 0; i < edges; i++) {
         int nodeA, nodeB, weight;
         cin >> nodeA >> nodeB >> weight;
         nodeA--;
         nodeB--;
         sum += weight;
-        graph_[nodeA].pb(make_pair(nodeB, weight));
-        graph_[nodeB].pb(make_pair(nodeA, weight));
-        graph_copy[nodeA].pb(make_pair(nodeB, weight));
-        graph_copy[nodeB].pb(make_pair(nodeA, weight));
+        ::graph_[nodeA].pb(make_pair(nodeB, weight));
+        ::graph_[nodeB].pb(make_pair(nodeA, weight));
     }
     if (k >= 2) {
         cout << sum;
     } else {
-        cout << DFS(DFS(0, graph_).first, graph_copy).second;
+        ll firstRun = DFS(0, 0, 0).first;
+        cout << DFS(firstRun, 0, firstRun).second;
     }
     return 0;
 }

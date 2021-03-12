@@ -32,8 +32,8 @@ struct LaceStep {
     int currNode;
 };
 
-vector<pair<double, double>> create_possibilities(int N, int d, int s, int t, int fmin, int fmax) {
-    vector<pair<double, double>> res;
+vector<double> create_possibilities(int N, int d, int s, int t, int fmin, int fmax) {
+    vector<double> res;
     bool eyelets[2 * (N - 1)]; // excluding the first row because always the same
     stack<LaceStep> stack_;
     LaceStep curr = LaceStep();
@@ -49,7 +49,7 @@ vector<pair<double, double>> create_possibilities(int N, int d, int s, int t, in
             for (int i = 0; i < 2 * (N - 1); ++i) {
                 if (curr.currEyelets[i]) tDistance += t;
             }
-            res.emplace_back(make_pair(curr.totalLength + tDistance + 2 * fmin, curr.totalLength + tDistance + 2 * fmax));
+            res.emplace_back(curr.totalLength + tDistance);
             continue;
         }
         for (int i = 0; i < 2 * (N - 1); ++i) {
@@ -61,17 +61,14 @@ vector<pair<double, double>> create_possibilities(int N, int d, int s, int t, in
                 new_eyelets[2 * (i / 2) + 1] = true;
                 step.currEyelets = new_eyelets;
                 step.currNode = i;
-                int separation = i - curr.currNode;
                 int changeLevel = abs(curr.currNode / 2 - i /2);
-                if (i % 2 != abs(curr.currNode % 2) || changeLevel == 1) { // checks for adjacent same column
-//                    cout << curr.currNode + 2 << "->" << i + 2 << nl;
-                    step.totalLength = separation % 2 == 0 ? 2 * changeLevel * d + curr.totalLength :
+                if (i % 2 != abs(curr.currNode % 2) || changeLevel <= 1) { // checks for adjacent same column
+                    step.totalLength = i % 2 == abs(curr.currNode % 2) ? 2 * changeLevel * d + curr.totalLength :
                                        2 * sqrt(pow(changeLevel * d, 2) + pow(s, 2)) + curr.totalLength;
                     stack_.push(step);
                 }
             }
         }
-        cout << nl;
     }
     return res;
 }
@@ -79,21 +76,21 @@ vector<pair<double, double>> create_possibilities(int N, int d, int s, int t, in
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int N,d,s,t,fmin,fmax;
+    int N, d, s ,t ,fmin ,fmax;
     cin >> N >> d >> s >> t >> fmin >> fmax;
-    vector<pair<double, double>> possible_ranges = create_possibilities(N, d, s, t, fmin, fmax);
-//    for (auto a: possible_ranges) {
-//        cout << a.first << " " << a.second << nl;
-//    }
-    int L;
+    vector<double> possible_ranges = create_possibilities(N, d, s, t, fmin, fmax);
+    for (double d_: possible_ranges) {
+        cout << d_ << nl;
+    }
+    double L;
     while (cin >> L) {
         int count = 0;
-        for (auto p: possible_ranges) {
-            if (p.first < L && L < p.second) {
+        for (double length: possible_ranges) {
+            if (length + 2 * fmin <= L && L <= length + 2 * fmax) {
                 count++;
             }
         }
         cout << count << nl;
     }
     return 0;
-}
+} // 8 10 25 3 125 175
