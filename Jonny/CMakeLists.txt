@@ -13,6 +13,7 @@ add_executable(ProblemC NCNARegional2020/ProblemC.cpp)
 add_executable(ProblemF NCNARegional2020/ProblemF.cpp)
 add_executable(MitchellProbI ../Mitchell/NCNA2020Regional/ProblemI.cpp)
 add_executable(MitchellProbJ ../Mitchell/NCNA2020Regional/ProblemJ.cpp)
+add_executable(10KindsOfPeople KattisProblems/10KindsOfPeople.cpp)
 
 
 
