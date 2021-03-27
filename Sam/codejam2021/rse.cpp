@@ -18,7 +18,7 @@
 #define pb push_back
 
 #define V vector
-#define vi V<int>
+#define vi vector<int>
 #define vll V<ll>
 #define vd V<double>
 #define pii pair<int, int>
@@ -45,17 +45,8 @@ ll power(ll a, ll n, ll mod) {ll p = 1;while (n > 0) {if(n%2) {p = p * a; p %= m
 // -------------------MAIN CODE-------------------//
 using namespace std;
 
-string vector_to_string(vi vector) {
-    stringstream stream;
-    for(vi::iterator it = vector.begin(); it != vector.end(); it++) {
-        stream << *it;
-    }
-    return stream.str();
-}
-
-vi shuffle(vi list, int n) {
-    
-}
+string vector_to_string(vi &n);
+void shuffle(vi &list, int n);
 
 int main(){
     ios_base::sync_with_stdio(0); 
@@ -67,24 +58,36 @@ int main(){
     int cost;
     int cases;
     int magic_number;
-    vi list;
     cin >> cases;
     for(int i = 0; i < cases; i++) {
         cin >> size;
         cin >> cost;
+        vi list(size);
         magic_number = (size+size)-2;
-        if(size-1 > cost || cost > (size+size) {
-            cout << "Case #" << (i+1) << ": IMPOSSIBLE" << endl;
+        if(size-1 > cost || cost > (size+size)) {
+            cout << "Case a#" << (i+1) << ": IMPOSSIBLE" << endl;
         } else if (cost == magic_number) {
-            list(size);
-            generate(list.begin(), list.end(), [n=size]() { return n--; });
-            cout < "Case #" << (i+1) << ": " << vector_to_string(list) << endl;
+            iota(list.rbegin(), list.rend(), 1);
+            cout << "Case b#" << (i+1) << ": " << vector_to_string(list) << endl;
         } else {
-            generate(list.begin(), list.end(), [n=1]() { return n++; });
+            iota(list.begin(), list.end(), 1);
             shuffle(list, cost);
-            cout < "Case #" << (i+1) << ": " << vector_to_string(list) << endl;
+            cout << "Case c#" << (i+1) << ": " << vector_to_string(list) << endl;
         }
     }
 
     return 0;
+}
+
+string vector_to_string(vi &n) {
+    stringstream stream;
+    for(vi::iterator it = n.begin(); it != n.end(); it++) {
+        stream << *it << " ";
+    }
+    cout << stream.str() << endl;
+    return stream.str();
+}
+
+void shuffle(vi &list, int n) {
+    cout << "shuffled" << endl;
 }
