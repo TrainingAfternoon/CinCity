@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp
+bits/stdc++.h
+-
+
