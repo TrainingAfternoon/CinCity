@@ -124,7 +124,7 @@ public:
 
     /**
      * Performs Kruskal's Algorithm to create the minimum spanning tree
-     * of the graph
+     * of a graph
      * @param pq the priority queue of all of the connections in the graph
      */
     void kruskals(priority_queue<Connection> pq) {
