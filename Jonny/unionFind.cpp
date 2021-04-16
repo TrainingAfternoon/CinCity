@@ -4,33 +4,98 @@
 #include <bits/stdc++.h>
 
 /**
+* Class to represent a node with a representative
+* and a size
+*/
+template <typename T>
+class Node {
+public:
+    long rep;
+    long size;
+    T data;
+
+    /**
+     * Constructor to initialize the Node
+     * @param rep_ the representative
+     * @param size_ the size of the set it's in
+     * @param data_ the data stored in the Node
+     */
+    Node(long rep_, long size_, T data_) {
+        rep = rep_;
+        size = size_;
+        data = data_;
+    }
+    /**
+     * Default constructor
+     */
+    Node() {
+        rep = 0;
+        size = 0;
+        data = 0;
+    }
+};
+
+/**
+ * Edge between two nodes
+ */
+class Edge {
+public:
+    long a;
+    long b;
+    bool isBidirectional;
+    long weight;
+
+    /**
+     * Constructor to initialize the Edge
+     * @param a_ node A
+     * @param b_ node B
+     * @param w_ the weight between
+     * @param isBidir if this is a bidirectional connectino
+     */
+    Edge(long a_, long b_, long w_, bool isBidir=false) {
+        a = a_;
+        b = b_;
+        weight = w_;
+        isBidirectional = isBidir;
+    }
+
+    /**
+     * Operator for less than between two edges
+     * @param a
+     * @param b
+     * @return
+     */
+    friend bool operator<(const Edge& a, const Edge& b);
+};
+
+/**
+ * Operator for priority queue to compare two edges and sort
+ * @param a a edge
+ * @param b the other edge
+ * @return boolean saying which is less than the other
+ */
+bool operator<(const Edge& a, const Edge& b) {
+    return a.weight > b.weight;
+}
+
+
+/**
  * Class for a UnionFind structure
  */
+template <typename T>
 class UnionFind {
 public:
-    /**
-     * Class to represent a node with a representative
-     * and a size
-     */
-    class Node {
-    public:
-        long rep;
-        long size;
-
-        Node(long rep_, long size_) {
-            rep = rep_;
-            size = size_;
-        }
-    };
-
-    Node *data;
+    vector<Node<T>> data;
+    long size;
 
     /**
      * Constructor for the UnionFind
      * @param size the size of the data
      */
-    UnionFind(int size) {
-        data = new Node [size];
+    explicit UnionFind(long size_) {
+        size = size_;
+        vector<Node<T>> temp(size);
+        data = temp;
     }
 
     /**
@@ -55,7 +120,10 @@ public:
      * @param node the node to give the representative of
      * @return the representative of the node
      */
-    long find(int node) {
+    long find(long node) {
+        while (node != data[node].rep) {
+            node = data[node].rep;
+        }
         return data[node].rep;
     }
 
@@ -70,71 +138,22 @@ public:
     }
 
     /**
-     * Connection between two nodes
-     */
-    class Connection {
-    public:
-        long a;
-        long b;
-        bool isBidirectional;
-        long weight;
-
-        /**
-         * Constructor to initialize the Connection
-         * @param a_ node A
-         * @param b_ node B
-         * @param w_ the weight between
-         * @param isBidir if this is a bidirectional connectino
-         */
-        Connection(long a_, long b_, long w_, bool isBidir) {
-            a = a_;
-            b = b_;
-            weight = w_;
-            isBidirectional = isBidir;
-        }
-
-        /**
-         * Constructor to initialize the Connection between (default one way)
-         * @param a_ node A
-         * @param b_ node B
-         * @param w_ the weight between
-         */
-        Connection(long a_, long b_, long w_) {
-            this(a_, b_ w_, false);
-        }
-
-        /**
-         * Operator for less than between two connections
-         * @param a
-         * @param b
-         * @return
-         */
-        friend bool operator<(const Connection& a, const Connection& b);
-    };
-
-    /**
-     * Operator for priority queue to compare two connections and sort
-     * @param a a connection
-     * @param b the other connection
-     * @return boolean saying which is less than the other
-     */
-    bool operator<(const Connection& a, const Connection& b) {
-        return a.weight > b.weight;
-    }
-
-    /**
      * Performs Kruskal's Algorithm to create the minimum spanning tree
      * of a graph
-     * @param pq the priority queue of all of the connections in the graph
+     * @param pq the priority queue of all of the edges in the graph
+     * @param f the function to be executed for each edge added in spanning tree
      */
-    void kruskals(priority_queue<Connection> pq) {
+    void kruskals(priority_queue<Edge> pq, const function<void(Edge edge)>& f = nullptr) {
         int connectionsMade = 0;
         while(connectionsMade < size - 1) {
-            Connection top = pq.top();
+            Edge top = pq.top();
             pq.pop();
             long a = top.a, b = top.b;
             if (!same(a, b)) {
                 unite(a, b);
+                if (f != nullptr) {
+                    f(top);
+                }
                 ++connectionsMade;
             }
         }
