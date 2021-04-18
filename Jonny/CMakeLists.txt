@@ -13,8 +13,13 @@ add_executable(ProblemC NCNARegional2020/ProblemC.cpp)
 add_executable(ProblemF NCNARegional2020/ProblemF.cpp)
 add_executable(MitchellProbI ../Mitchell/NCNA2020Regional/ProblemI.cpp)
 add_executable(MitchellProbJ ../Mitchell/NCNA2020Regional/ProblemJ.cpp)
-add_executable(10KindsOfPeople KattisProblems/10KindsOfPeople.cpp)
+add_executable(10KindsOfPeople KattisProblems/10KindsOfPeople.cpp PracticeNADC/problemF.cpp PracticeNADC/problemI.cpp PracticeNADC/problemA.cpp PracticeNADC/problemG.cpp PracticeNADC/problemB.cpp PracticeNADC/problemK.cpp PracticeNADC/problemE.cpp)
 
-
+add_executable(ProblemFPracticeNADC PracticeNADC/problemF.cpp)
+add_executable(ProblemIPracticeNADC PracticeNADC/problemI.cpp)
+add_executable(ProblemAPracticeNADC PracticeNADC/problemA.cpp)
+add_executable(ProblemGPracticeNADC PracticeNADC/problemG.cpp)
+add_executable(ProblemBPracticeNADC PracticeNADC/problemB.cpp)
+add_executable(ProblemKPracticeNADC PracticeNADC/problemK.cpp)
 
 
