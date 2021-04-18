@@ -43,5 +43,7 @@ int main() {
     cin >> b.first >> b.second;
     cin >> c.first >> c.second;
 
+    // implementation stuff
+
     return 0;
 }
