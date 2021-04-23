@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp
+/home/team/workspace/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp
+bits/stdc++.h
+-
+
+/home/team/workspace/CinCity/Jonny/PracticeNADC/problemF.cpp
 bits/stdc++.h
 -
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MitchellProbJ.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o"
+  "CMakeFiles/MitchellProbJ.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o"
   "MitchellProbJ"
   "MitchellProbJ.pdb"
 )

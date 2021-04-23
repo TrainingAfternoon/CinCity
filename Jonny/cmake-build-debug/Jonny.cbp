@@ -8,510 +8,845 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MitchellProbJ">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/MitchellProbJ" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemKPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemKPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbJ"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemKPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MitchellProbJ/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/MitchellProbJ" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemKPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemKPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbJ/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemKPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MitchellProbI">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/MitchellProbI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemAPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemAPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbI"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemAPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MitchellProbI/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/MitchellProbI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemAPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemAPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbI/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemAPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ProblemF">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemF" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemIPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemIPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemF"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemIPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ProblemF/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemF" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemIPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemIPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemF/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemIPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Euler">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemGPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemGPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemGPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Euler/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemGPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemGPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemGPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ProblemD">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemD" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemFPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemFPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemD"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemFPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ProblemD/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemD" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+			<Target title="ProblemFPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemFPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemD/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemI">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemI"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemI/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemI/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemJ">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemJ" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemJ"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemJ/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemJ" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemJ/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemC">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemC" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemC"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemC/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemC" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemC/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemK">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemK" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemK"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ProblemK/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/ProblemK" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemK/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemFPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="10KindsOfPeople">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/10KindsOfPeople" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/10KindsOfPeople" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 10KindsOfPeople"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 10KindsOfPeople"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="10KindsOfPeople/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/10KindsOfPeople" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/10KindsOfPeople" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 10KindsOfPeople/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 10KindsOfPeople/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemJ">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemJ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemJ"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemJ/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemJ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemJ/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Euler">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Euler/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/Euler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Euler/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MitchellProbI">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/MitchellProbI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbI"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MitchellProbI/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/MitchellProbI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbI/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jonny">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Jonny" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/Jonny" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jonny"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jonny"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Jonny/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Jonny" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/Jonny" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jonny/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 Jonny/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemD">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemD"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemD/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemD/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemBPracticeNADC">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemBPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemBPracticeNADC"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemBPracticeNADC/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemBPracticeNADC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemBPracticeNADC/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemI">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemI"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemI/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemI/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemF">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemF" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemF"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemF/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemF" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemF/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemK">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemK" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemK"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ProblemK/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/ProblemK" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProblemK/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MitchellProbJ">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/MitchellProbJ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbJ"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MitchellProbJ/fast">
+				<Option output="/home/team/workspace/CinCity/Jonny/cmake-build-debug/MitchellProbJ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/team/workspace/CinCity/Jonny/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 MitchellProbJ/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/team/workspace/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp">
 			<Option target="10KindsOfPeople"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemC.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemC.cpp">
 			<Option target="ProblemC"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemD.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemD.cpp">
 			<Option target="ProblemD"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemF.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemF.cpp">
 			<Option target="ProblemF"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemI.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemI.cpp">
 			<Option target="ProblemI"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemJ.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemJ.cpp">
 			<Option target="ProblemJ"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemK.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/NCNARegional2020/ProblemK.cpp">
 			<Option target="ProblemK"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/PracticeNCNA/eulers.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemA.cpp">
+			<Option target="ProblemAPracticeNADC"/>
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemB.cpp">
+			<Option target="10KindsOfPeople"/>
+			<Option target="ProblemBPracticeNADC"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemE.cpp">
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemF.cpp">
+			<Option target="ProblemFPracticeNADC"/>
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemG.cpp">
+			<Option target="ProblemGPracticeNADC"/>
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemI.cpp">
+			<Option target="ProblemIPracticeNADC"/>
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNADC/problemK.cpp">
+			<Option target="ProblemKPracticeNADC"/>
+			<Option target="10KindsOfPeople"/>
+		</Unit>
+		<Unit filename="/home/team/workspace/CinCity/Jonny/PracticeNCNA/eulers.cpp">
 			<Option target="Euler"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/helloWorld.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/helloWorld.cpp">
 			<Option target="Jonny"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp">
 			<Option target="MitchellProbI"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp">
+		<Unit filename="/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp">
 			<Option target="MitchellProbJ"/>
 		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/CMakeLists.txt">
+		<Unit filename="/home/team/workspace/CinCity/Jonny/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
