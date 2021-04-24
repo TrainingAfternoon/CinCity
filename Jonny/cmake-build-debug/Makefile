@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2020.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/team/workspace/CinCity/Jonny
+CMAKE_SOURCE_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/team/workspace/CinCity/Jonny/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/team/workspace/CinCity/Jonny/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2020.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2020.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ProblemKPracticeNADC
+# Target rules for targets named ProblemGPracticeNADC
 
 # Build rule for target.
-ProblemKPracticeNADC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemKPracticeNADC
-.PHONY : ProblemKPracticeNADC
+ProblemGPracticeNADC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemGPracticeNADC
+.PHONY : ProblemGPracticeNADC
 
 # fast build rule for target.
-ProblemKPracticeNADC/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/build
-.PHONY : ProblemKPracticeNADC/fast
+ProblemGPracticeNADC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/build
+.PHONY : ProblemGPracticeNADC/fast
 
 #=============================================================================
 # Target rules for targets named ProblemAPracticeNADC
@@ -170,19 +170,6 @@ ProblemIPracticeNADC/fast:
 .PHONY : ProblemIPracticeNADC/fast
 
 #=============================================================================
-# Target rules for targets named ProblemGPracticeNADC
-
-# Build rule for target.
-ProblemGPracticeNADC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemGPracticeNADC
-.PHONY : ProblemGPracticeNADC
-
-# fast build rule for target.
-ProblemGPracticeNADC/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/build
-.PHONY : ProblemGPracticeNADC/fast
-
-#=============================================================================
 # Target rules for targets named ProblemFPracticeNADC
 
 # Build rule for target.
@@ -196,56 +183,30 @@ ProblemFPracticeNADC/fast:
 .PHONY : ProblemFPracticeNADC/fast
 
 #=============================================================================
-# Target rules for targets named 10KindsOfPeople
+# Target rules for targets named YouBeTheJudge
 
 # Build rule for target.
-10KindsOfPeople: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 10KindsOfPeople
-.PHONY : 10KindsOfPeople
+YouBeTheJudge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YouBeTheJudge
+.PHONY : YouBeTheJudge
 
 # fast build rule for target.
-10KindsOfPeople/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/build
-.PHONY : 10KindsOfPeople/fast
+YouBeTheJudge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
+.PHONY : YouBeTheJudge/fast
 
 #=============================================================================
-# Target rules for targets named ProblemC
+# Target rules for targets named MitchellProbJ
 
 # Build rule for target.
-ProblemC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemC
-.PHONY : ProblemC
+MitchellProbJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MitchellProbJ
+.PHONY : MitchellProbJ
 
 # fast build rule for target.
-ProblemC/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/build
-.PHONY : ProblemC/fast
-
-#=============================================================================
-# Target rules for targets named ProblemJ
-
-# Build rule for target.
-ProblemJ: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemJ
-.PHONY : ProblemJ
-
-# fast build rule for target.
-ProblemJ/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/build
-.PHONY : ProblemJ/fast
-
-#=============================================================================
-# Target rules for targets named Euler
-
-# Build rule for target.
-Euler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Euler
-.PHONY : Euler
-
-# fast build rule for target.
-Euler/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
-.PHONY : Euler/fast
+MitchellProbJ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/build
+.PHONY : MitchellProbJ/fast
 
 #=============================================================================
 # Target rules for targets named MitchellProbI
@@ -261,17 +222,30 @@ MitchellProbI/fast:
 .PHONY : MitchellProbI/fast
 
 #=============================================================================
-# Target rules for targets named Jonny
+# Target rules for targets named ProblemF
 
 # Build rule for target.
-Jonny: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Jonny
-.PHONY : Jonny
+ProblemF: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemF
+.PHONY : ProblemF
 
 # fast build rule for target.
-Jonny/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/build
-.PHONY : Jonny/fast
+ProblemF/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/build
+.PHONY : ProblemF/fast
+
+#=============================================================================
+# Target rules for targets named Euler
+
+# Build rule for target.
+Euler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Euler
+.PHONY : Euler
+
+# fast build rule for target.
+Euler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
+.PHONY : Euler/fast
 
 #=============================================================================
 # Target rules for targets named ProblemD
@@ -313,17 +287,43 @@ ProblemI/fast:
 .PHONY : ProblemI/fast
 
 #=============================================================================
-# Target rules for targets named ProblemF
+# Target rules for targets named ProblemKPracticeNADC
 
 # Build rule for target.
-ProblemF: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemF
-.PHONY : ProblemF
+ProblemKPracticeNADC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemKPracticeNADC
+.PHONY : ProblemKPracticeNADC
 
 # fast build rule for target.
-ProblemF/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/build
-.PHONY : ProblemF/fast
+ProblemKPracticeNADC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/build
+.PHONY : ProblemKPracticeNADC/fast
+
+#=============================================================================
+# Target rules for targets named ProblemJ
+
+# Build rule for target.
+ProblemJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemJ
+.PHONY : ProblemJ
+
+# fast build rule for target.
+ProblemJ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/build
+.PHONY : ProblemJ/fast
+
+#=============================================================================
+# Target rules for targets named ProblemC
+
+# Build rule for target.
+ProblemC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProblemC
+.PHONY : ProblemC
+
+# fast build rule for target.
+ProblemC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/build
+.PHONY : ProblemC/fast
 
 #=============================================================================
 # Target rules for targets named ProblemK
@@ -339,17 +339,30 @@ ProblemK/fast:
 .PHONY : ProblemK/fast
 
 #=============================================================================
-# Target rules for targets named MitchellProbJ
+# Target rules for targets named 10KindsOfPeople
 
 # Build rule for target.
-MitchellProbJ: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MitchellProbJ
-.PHONY : MitchellProbJ
+10KindsOfPeople: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 10KindsOfPeople
+.PHONY : 10KindsOfPeople
 
 # fast build rule for target.
-MitchellProbJ/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/build
-.PHONY : MitchellProbJ/fast
+10KindsOfPeople/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/build
+.PHONY : 10KindsOfPeople/fast
+
+#=============================================================================
+# Target rules for targets named Jonny
+
+# Build rule for target.
+Jonny: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Jonny
+.PHONY : Jonny
+
+# fast build rule for target.
+Jonny/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/build
+.PHONY : Jonny/fast
 
 KattisProblems/10KindsOfPeople.o: KattisProblems/10KindsOfPeople.cpp.o
 
@@ -377,6 +390,33 @@ KattisProblems/10KindsOfPeople.s: KattisProblems/10KindsOfPeople.cpp.s
 KattisProblems/10KindsOfPeople.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s
 .PHONY : KattisProblems/10KindsOfPeople.cpp.s
+
+NADC2021/YouBeTheJudge.o: NADC2021/YouBeTheJudge.cpp.o
+
+.PHONY : NADC2021/YouBeTheJudge.o
+
+# target to build an object file
+NADC2021/YouBeTheJudge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.o
+.PHONY : NADC2021/YouBeTheJudge.cpp.o
+
+NADC2021/YouBeTheJudge.i: NADC2021/YouBeTheJudge.cpp.i
+
+.PHONY : NADC2021/YouBeTheJudge.i
+
+# target to preprocess a source file
+NADC2021/YouBeTheJudge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.i
+.PHONY : NADC2021/YouBeTheJudge.cpp.i
+
+NADC2021/YouBeTheJudge.s: NADC2021/YouBeTheJudge.cpp.s
+
+.PHONY : NADC2021/YouBeTheJudge.s
+
+# target to generate assembly for a file
+NADC2021/YouBeTheJudge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.s
+.PHONY : NADC2021/YouBeTheJudge.cpp.s
 
 NCNARegional2020/ProblemC.o: NCNARegional2020/ProblemC.cpp.o
 
@@ -547,7 +587,6 @@ PracticeNADC/problemA.o: PracticeNADC/problemA.cpp.o
 # target to build an object file
 PracticeNADC/problemA.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/PracticeNADC/problemA.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o
 .PHONY : PracticeNADC/problemA.cpp.o
 
 PracticeNADC/problemA.i: PracticeNADC/problemA.cpp.i
@@ -557,7 +596,6 @@ PracticeNADC/problemA.i: PracticeNADC/problemA.cpp.i
 # target to preprocess a source file
 PracticeNADC/problemA.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/PracticeNADC/problemA.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.i
 .PHONY : PracticeNADC/problemA.cpp.i
 
 PracticeNADC/problemA.s: PracticeNADC/problemA.cpp.s
@@ -567,7 +605,6 @@ PracticeNADC/problemA.s: PracticeNADC/problemA.cpp.s
 # target to generate assembly for a file
 PracticeNADC/problemA.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/PracticeNADC/problemA.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.s
 .PHONY : PracticeNADC/problemA.cpp.s
 
 PracticeNADC/problemB.o: PracticeNADC/problemB.cpp.o
@@ -576,7 +613,6 @@ PracticeNADC/problemB.o: PracticeNADC/problemB.cpp.o
 
 # target to build an object file
 PracticeNADC/problemB.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/PracticeNADC/problemB.cpp.o
 .PHONY : PracticeNADC/problemB.cpp.o
 
@@ -586,7 +622,6 @@ PracticeNADC/problemB.i: PracticeNADC/problemB.cpp.i
 
 # target to preprocess a source file
 PracticeNADC/problemB.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/PracticeNADC/problemB.cpp.i
 .PHONY : PracticeNADC/problemB.cpp.i
 
@@ -596,36 +631,8 @@ PracticeNADC/problemB.s: PracticeNADC/problemB.cpp.s
 
 # target to generate assembly for a file
 PracticeNADC/problemB.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/PracticeNADC/problemB.cpp.s
 .PHONY : PracticeNADC/problemB.cpp.s
-
-PracticeNADC/problemE.o: PracticeNADC/problemE.cpp.o
-
-.PHONY : PracticeNADC/problemE.o
-
-# target to build an object file
-PracticeNADC/problemE.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o
-.PHONY : PracticeNADC/problemE.cpp.o
-
-PracticeNADC/problemE.i: PracticeNADC/problemE.cpp.i
-
-.PHONY : PracticeNADC/problemE.i
-
-# target to preprocess a source file
-PracticeNADC/problemE.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.i
-.PHONY : PracticeNADC/problemE.cpp.i
-
-PracticeNADC/problemE.s: PracticeNADC/problemE.cpp.s
-
-.PHONY : PracticeNADC/problemE.s
-
-# target to generate assembly for a file
-PracticeNADC/problemE.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.s
-.PHONY : PracticeNADC/problemE.cpp.s
 
 PracticeNADC/problemF.o: PracticeNADC/problemF.cpp.o
 
@@ -634,7 +641,6 @@ PracticeNADC/problemF.o: PracticeNADC/problemF.cpp.o
 # target to build an object file
 PracticeNADC/problemF.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/PracticeNADC/problemF.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o
 .PHONY : PracticeNADC/problemF.cpp.o
 
 PracticeNADC/problemF.i: PracticeNADC/problemF.cpp.i
@@ -644,7 +650,6 @@ PracticeNADC/problemF.i: PracticeNADC/problemF.cpp.i
 # target to preprocess a source file
 PracticeNADC/problemF.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/PracticeNADC/problemF.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.i
 .PHONY : PracticeNADC/problemF.cpp.i
 
 PracticeNADC/problemF.s: PracticeNADC/problemF.cpp.s
@@ -654,7 +659,6 @@ PracticeNADC/problemF.s: PracticeNADC/problemF.cpp.s
 # target to generate assembly for a file
 PracticeNADC/problemF.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/PracticeNADC/problemF.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.s
 .PHONY : PracticeNADC/problemF.cpp.s
 
 PracticeNADC/problemG.o: PracticeNADC/problemG.cpp.o
@@ -664,7 +668,6 @@ PracticeNADC/problemG.o: PracticeNADC/problemG.cpp.o
 # target to build an object file
 PracticeNADC/problemG.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/PracticeNADC/problemG.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o
 .PHONY : PracticeNADC/problemG.cpp.o
 
 PracticeNADC/problemG.i: PracticeNADC/problemG.cpp.i
@@ -674,7 +677,6 @@ PracticeNADC/problemG.i: PracticeNADC/problemG.cpp.i
 # target to preprocess a source file
 PracticeNADC/problemG.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/PracticeNADC/problemG.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.i
 .PHONY : PracticeNADC/problemG.cpp.i
 
 PracticeNADC/problemG.s: PracticeNADC/problemG.cpp.s
@@ -684,7 +686,6 @@ PracticeNADC/problemG.s: PracticeNADC/problemG.cpp.s
 # target to generate assembly for a file
 PracticeNADC/problemG.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/PracticeNADC/problemG.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.s
 .PHONY : PracticeNADC/problemG.cpp.s
 
 PracticeNADC/problemI.o: PracticeNADC/problemI.cpp.o
@@ -694,7 +695,6 @@ PracticeNADC/problemI.o: PracticeNADC/problemI.cpp.o
 # target to build an object file
 PracticeNADC/problemI.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/PracticeNADC/problemI.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o
 .PHONY : PracticeNADC/problemI.cpp.o
 
 PracticeNADC/problemI.i: PracticeNADC/problemI.cpp.i
@@ -704,7 +704,6 @@ PracticeNADC/problemI.i: PracticeNADC/problemI.cpp.i
 # target to preprocess a source file
 PracticeNADC/problemI.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/PracticeNADC/problemI.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.i
 .PHONY : PracticeNADC/problemI.cpp.i
 
 PracticeNADC/problemI.s: PracticeNADC/problemI.cpp.s
@@ -714,7 +713,6 @@ PracticeNADC/problemI.s: PracticeNADC/problemI.cpp.s
 # target to generate assembly for a file
 PracticeNADC/problemI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/PracticeNADC/problemI.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.s
 .PHONY : PracticeNADC/problemI.cpp.s
 
 PracticeNADC/problemK.o: PracticeNADC/problemK.cpp.o
@@ -724,7 +722,6 @@ PracticeNADC/problemK.o: PracticeNADC/problemK.cpp.o
 # target to build an object file
 PracticeNADC/problemK.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/PracticeNADC/problemK.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o
 .PHONY : PracticeNADC/problemK.cpp.o
 
 PracticeNADC/problemK.i: PracticeNADC/problemK.cpp.i
@@ -734,7 +731,6 @@ PracticeNADC/problemK.i: PracticeNADC/problemK.cpp.i
 # target to preprocess a source file
 PracticeNADC/problemK.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/PracticeNADC/problemK.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.i
 .PHONY : PracticeNADC/problemK.cpp.i
 
 PracticeNADC/problemK.s: PracticeNADC/problemK.cpp.s
@@ -744,7 +740,6 @@ PracticeNADC/problemK.s: PracticeNADC/problemK.cpp.s
 # target to generate assembly for a file
 PracticeNADC/problemK.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/PracticeNADC/problemK.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.s
 .PHONY : PracticeNADC/problemK.cpp.s
 
 PracticeNCNA/eulers.o: PracticeNCNA/eulers.cpp.o
@@ -774,6 +769,60 @@ PracticeNCNA/eulers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/PracticeNCNA/eulers.cpp.s
 .PHONY : PracticeNCNA/eulers.cpp.s
 
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.o: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.o
+
+# target to build an object file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
+
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.i: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.i
+
+# target to preprocess a source file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
+
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.s: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.s
+
+# target to generate assembly for a file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
+
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o
+
+# target to build an object file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
+
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i
+
+# target to preprocess a source file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
+
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s: Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
+
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s
+
+# target to generate assembly for a file
+Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
+.PHONY : Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 
 .PHONY : helloWorld.o
@@ -801,60 +850,6 @@ helloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/helloWorld.cpp.s
 .PHONY : helloWorld.cpp.s
 
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.o: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.o
-
-# target to build an object file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
-
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.i: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.i
-
-# target to preprocess a source file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
-
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.s: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.s
-
-# target to generate assembly for a file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
-
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o
-
-# target to build an object file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o
-
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i
-
-# target to preprocess a source file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.i
-
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s: home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
-
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s
-
-# target to generate assembly for a file
-home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
-.PHONY : home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -880,9 +875,13 @@ help:
 	@echo "... ProblemJ"
 	@echo "... ProblemK"
 	@echo "... ProblemKPracticeNADC"
+	@echo "... YouBeTheJudge"
 	@echo "... KattisProblems/10KindsOfPeople.o"
 	@echo "... KattisProblems/10KindsOfPeople.i"
 	@echo "... KattisProblems/10KindsOfPeople.s"
+	@echo "... NADC2021/YouBeTheJudge.o"
+	@echo "... NADC2021/YouBeTheJudge.i"
+	@echo "... NADC2021/YouBeTheJudge.s"
 	@echo "... NCNARegional2020/ProblemC.o"
 	@echo "... NCNARegional2020/ProblemC.i"
 	@echo "... NCNARegional2020/ProblemC.s"
@@ -907,9 +906,6 @@ help:
 	@echo "... PracticeNADC/problemB.o"
 	@echo "... PracticeNADC/problemB.i"
 	@echo "... PracticeNADC/problemB.s"
-	@echo "... PracticeNADC/problemE.o"
-	@echo "... PracticeNADC/problemE.i"
-	@echo "... PracticeNADC/problemE.s"
 	@echo "... PracticeNADC/problemF.o"
 	@echo "... PracticeNADC/problemF.i"
 	@echo "... PracticeNADC/problemF.s"
@@ -925,15 +921,15 @@ help:
 	@echo "... PracticeNCNA/eulers.o"
 	@echo "... PracticeNCNA/eulers.i"
 	@echo "... PracticeNCNA/eulers.s"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.o"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.i"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.s"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i"
+	@echo "... Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.o"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.i"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.s"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.o"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.i"
-	@echo "... home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.s"
 .PHONY : help
 
 

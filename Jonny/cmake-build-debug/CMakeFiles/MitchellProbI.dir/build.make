@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2020.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/team/workspace/CinCity/Jonny
+CMAKE_SOURCE_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/team/workspace/CinCity/Jonny/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MitchellProbI.dir/depend.make
@@ -77,30 +77,30 @@ include CMakeFiles/MitchellProbI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MitchellProbI.dir/flags.make
 
-CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o: CMakeFiles/MitchellProbI.dir/flags.make
-CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o: /home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o -c /home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp
+CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o: CMakeFiles/MitchellProbI.dir/flags.make
+CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o: /Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o -c /Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp
 
-CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp > CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
+CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp > CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.i
 
-CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp -o CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
+CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp -o CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.s
 
 # Object files for target MitchellProbI
 MitchellProbI_OBJECTS = \
-"CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o"
+"CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o"
 
 # External object files for target MitchellProbI
 MitchellProbI_EXTERNAL_OBJECTS =
 
-MitchellProbI: CMakeFiles/MitchellProbI.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
+MitchellProbI: CMakeFiles/MitchellProbI.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemI.cpp.o
 MitchellProbI: CMakeFiles/MitchellProbI.dir/build.make
 MitchellProbI: CMakeFiles/MitchellProbI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MitchellProbI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MitchellProbI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MitchellProbI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +113,6 @@ CMakeFiles/MitchellProbI.dir/clean:
 .PHONY : CMakeFiles/MitchellProbI.dir/clean
 
 CMakeFiles/MitchellProbI.dir/depend:
-	cd /home/team/workspace/CinCity/Jonny/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/team/workspace/CinCity/Jonny /home/team/workspace/CinCity/Jonny /home/team/workspace/CinCity/Jonny/cmake-build-debug /home/team/workspace/CinCity/Jonny/cmake-build-debug /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles/MitchellProbI.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jkeane/CLionProjects/CinCity/Jonny /Users/jkeane/CLionProjects/CinCity/Jonny /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/MitchellProbI.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MitchellProbI.dir/depend
 

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ProblemK.dir/NCNARegional2020/ProblemK.cpp.o  -o ProblemK 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ProblemK.dir/NCNARegional2020/ProblemK.cpp.o  -o ProblemK 

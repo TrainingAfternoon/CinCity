@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MitchellProbJ.dir/home/team/workspace/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o  -o MitchellProbJ 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/MitchellProbJ.dir/Users/jkeane/CLionProjects/CinCity/Mitchell/NCNA2020Regional/ProblemJ.cpp.o  -o MitchellProbJ 

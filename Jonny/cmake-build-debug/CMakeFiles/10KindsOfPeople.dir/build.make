@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2020.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/team/workspace/CinCity/Jonny
+CMAKE_SOURCE_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/team/workspace/CinCity/Jonny/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/10KindsOfPeople.dir/depend.make
@@ -79,133 +79,28 @@ include CMakeFiles/10KindsOfPeople.dir/flags.make
 
 CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
 CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o: ../KattisProblems/10KindsOfPeople.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o -c /home/team/workspace/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o -c /Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp
 
 CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp > CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp > CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.i
 
 CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp -o CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o: ../PracticeNADC/problemF.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemF.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemF.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemF.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o: ../PracticeNADC/problemI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemI.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemI.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemI.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o: ../PracticeNADC/problemA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemA.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemA.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemA.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o: ../PracticeNADC/problemG.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemG.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemG.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemG.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o: ../PracticeNADC/problemB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemB.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemB.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemB.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o: ../PracticeNADC/problemK.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemK.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemK.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemK.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.s
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o: CMakeFiles/10KindsOfPeople.dir/flags.make
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o: ../PracticeNADC/problemE.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o -c /home/team/workspace/CinCity/Jonny/PracticeNADC/problemE.cpp
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/workspace/CinCity/Jonny/PracticeNADC/problemE.cpp > CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.i
-
-CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/workspace/CinCity/Jonny/PracticeNADC/problemE.cpp -o CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp -o CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s
 
 # Object files for target 10KindsOfPeople
 10KindsOfPeople_OBJECTS = \
-"CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o" \
-"CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o"
+"CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o"
 
 # External object files for target 10KindsOfPeople
 10KindsOfPeople_EXTERNAL_OBJECTS =
 
 10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemI.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemA.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemG.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemB.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemK.cpp.o
-10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemE.cpp.o
 10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/build.make
 10KindsOfPeople: CMakeFiles/10KindsOfPeople.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable 10KindsOfPeople"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 10KindsOfPeople"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/10KindsOfPeople.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -218,6 +113,6 @@ CMakeFiles/10KindsOfPeople.dir/clean:
 .PHONY : CMakeFiles/10KindsOfPeople.dir/clean
 
 CMakeFiles/10KindsOfPeople.dir/depend:
-	cd /home/team/workspace/CinCity/Jonny/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/team/workspace/CinCity/Jonny /home/team/workspace/CinCity/Jonny /home/team/workspace/CinCity/Jonny/cmake-build-debug /home/team/workspace/CinCity/Jonny/cmake-build-debug /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles/10KindsOfPeople.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jkeane/CLionProjects/CinCity/Jonny /Users/jkeane/CLionProjects/CinCity/Jonny /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/10KindsOfPeople.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/10KindsOfPeople.dir/depend
 
