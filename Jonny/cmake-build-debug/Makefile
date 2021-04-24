@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named YouBeTheJudge
+
+# Build rule for target.
+YouBeTheJudge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YouBeTheJudge
+.PHONY : YouBeTheJudge
+
+# fast build rule for target.
+YouBeTheJudge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
+.PHONY : YouBeTheJudge/fast
+
+#=============================================================================
 # Target rules for targets named MitchellProbJ
 
 # Build rule for target.
@@ -299,6 +312,33 @@ KattisProblems/10KindsOfPeople.s: KattisProblems/10KindsOfPeople.cpp.s
 KattisProblems/10KindsOfPeople.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s
 .PHONY : KattisProblems/10KindsOfPeople.cpp.s
+
+NADC2021/YouBeTheJudge.o: NADC2021/YouBeTheJudge.cpp.o
+
+.PHONY : NADC2021/YouBeTheJudge.o
+
+# target to build an object file
+NADC2021/YouBeTheJudge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.o
+.PHONY : NADC2021/YouBeTheJudge.cpp.o
+
+NADC2021/YouBeTheJudge.i: NADC2021/YouBeTheJudge.cpp.i
+
+.PHONY : NADC2021/YouBeTheJudge.i
+
+# target to preprocess a source file
+NADC2021/YouBeTheJudge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.i
+.PHONY : NADC2021/YouBeTheJudge.cpp.i
+
+NADC2021/YouBeTheJudge.s: NADC2021/YouBeTheJudge.cpp.s
+
+.PHONY : NADC2021/YouBeTheJudge.s
+
+# target to generate assembly for a file
+NADC2021/YouBeTheJudge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/NADC2021/YouBeTheJudge.cpp.s
+.PHONY : NADC2021/YouBeTheJudge.cpp.s
 
 NCNARegional2020/ProblemC.o: NCNARegional2020/ProblemC.cpp.o
 
@@ -589,9 +629,13 @@ help:
 	@echo "... ProblemI"
 	@echo "... ProblemJ"
 	@echo "... ProblemK"
+	@echo "... YouBeTheJudge"
 	@echo "... KattisProblems/10KindsOfPeople.o"
 	@echo "... KattisProblems/10KindsOfPeople.i"
 	@echo "... KattisProblems/10KindsOfPeople.s"
+	@echo "... NADC2021/YouBeTheJudge.o"
+	@echo "... NADC2021/YouBeTheJudge.i"
+	@echo "... NADC2021/YouBeTheJudge.s"
 	@echo "... NCNARegional2020/ProblemC.o"
 	@echo "... NCNARegional2020/ProblemC.i"
 	@echo "... NCNARegional2020/ProblemC.s"

@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/YouBeTheJudge.dir/all
 all: CMakeFiles/MitchellProbJ.dir/all
 all: CMakeFiles/MitchellProbI.dir/all
 all: CMakeFiles/ProblemF.dir/all
@@ -93,6 +94,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/YouBeTheJudge.dir/clean
 clean: CMakeFiles/MitchellProbJ.dir/clean
 clean: CMakeFiles/MitchellProbI.dir/clean
 clean: CMakeFiles/ProblemF.dir/clean
@@ -106,6 +108,33 @@ clean: CMakeFiles/10KindsOfPeople.dir/clean
 clean: CMakeFiles/Jonny.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/YouBeTheJudge.dir
+
+# All Build rule for target.
+CMakeFiles/YouBeTheJudge.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target YouBeTheJudge"
+.PHONY : CMakeFiles/YouBeTheJudge.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/YouBeTheJudge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/YouBeTheJudge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/YouBeTheJudge.dir/rule
+
+# Convenience name for target.
+YouBeTheJudge: CMakeFiles/YouBeTheJudge.dir/rule
+
+.PHONY : YouBeTheJudge
+
+# clean rule for target.
+CMakeFiles/YouBeTheJudge.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/clean
+.PHONY : CMakeFiles/YouBeTheJudge.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/MitchellProbJ.dir

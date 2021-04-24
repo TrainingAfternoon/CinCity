@@ -143,7 +143,7 @@ public:
      * @param pq the priority queue of all of the edges in the graph
      * @param f the function to be executed for each edge added in spanning tree
      */
-    void kruskals(priority_queue<Edge> pq, const function<void(Edge edge)>& f = nullptr) {
+    void kruskals(priority_queue<Edge> pq, const function<void(Edge edge, Node<T> a, Node<T> b)>& f = nullptr) {
         int connectionsMade = 0;
         while(connectionsMade < size - 1) {
             Edge top = pq.top();
@@ -152,7 +152,7 @@ public:
             if (!same(a, b)) {
                 unite(a, b);
                 if (f != nullptr) {
-                    f(top);
+                    f(top, data[a], data[b]);
                 }
                 ++connectionsMade;
             }
