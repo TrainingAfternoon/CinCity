@@ -3,3 +3,5 @@
 
 CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o: ../KattisProblems/10KindsOfPeople.cpp
 
+CMakeFiles/10KindsOfPeople.dir/PracticeNADC/problemF.cpp.o: ../PracticeNADC/problemF.cpp
+

@@ -55,36 +55,41 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2020.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /opt/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny
+CMAKE_SOURCE_DIR = /home/team/workspace/CinCity/Jonny
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug
+CMAKE_BINARY_DIR = /home/team/workspace/CinCity/Jonny/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/YouBeTheJudge.dir/all
-all: CMakeFiles/MitchellProbJ.dir/all
-all: CMakeFiles/MitchellProbI.dir/all
-all: CMakeFiles/ProblemF.dir/all
-all: CMakeFiles/Euler.dir/all
-all: CMakeFiles/ProblemD.dir/all
-all: CMakeFiles/ProblemI.dir/all
-all: CMakeFiles/ProblemJ.dir/all
-all: CMakeFiles/ProblemC.dir/all
-all: CMakeFiles/ProblemK.dir/all
+all: CMakeFiles/ProblemKPracticeNADC.dir/all
+all: CMakeFiles/ProblemAPracticeNADC.dir/all
+all: CMakeFiles/ProblemIPracticeNADC.dir/all
+all: CMakeFiles/ProblemGPracticeNADC.dir/all
+all: CMakeFiles/ProblemFPracticeNADC.dir/all
 all: CMakeFiles/10KindsOfPeople.dir/all
+all: CMakeFiles/ProblemC.dir/all
+all: CMakeFiles/ProblemJ.dir/all
+all: CMakeFiles/Euler.dir/all
+all: CMakeFiles/MitchellProbI.dir/all
 all: CMakeFiles/Jonny.dir/all
+all: CMakeFiles/ProblemD.dir/all
+all: CMakeFiles/ProblemBPracticeNADC.dir/all
+all: CMakeFiles/ProblemI.dir/all
+all: CMakeFiles/ProblemF.dir/all
+all: CMakeFiles/ProblemK.dir/all
+all: CMakeFiles/MitchellProbJ.dir/all
 
 .PHONY : all
 
@@ -94,290 +99,160 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/YouBeTheJudge.dir/clean
-clean: CMakeFiles/MitchellProbJ.dir/clean
-clean: CMakeFiles/MitchellProbI.dir/clean
-clean: CMakeFiles/ProblemF.dir/clean
-clean: CMakeFiles/Euler.dir/clean
-clean: CMakeFiles/ProblemD.dir/clean
-clean: CMakeFiles/ProblemI.dir/clean
-clean: CMakeFiles/ProblemJ.dir/clean
-clean: CMakeFiles/ProblemC.dir/clean
-clean: CMakeFiles/ProblemK.dir/clean
+clean: CMakeFiles/ProblemKPracticeNADC.dir/clean
+clean: CMakeFiles/ProblemAPracticeNADC.dir/clean
+clean: CMakeFiles/ProblemIPracticeNADC.dir/clean
+clean: CMakeFiles/ProblemGPracticeNADC.dir/clean
+clean: CMakeFiles/ProblemFPracticeNADC.dir/clean
 clean: CMakeFiles/10KindsOfPeople.dir/clean
+clean: CMakeFiles/ProblemC.dir/clean
+clean: CMakeFiles/ProblemJ.dir/clean
+clean: CMakeFiles/Euler.dir/clean
+clean: CMakeFiles/MitchellProbI.dir/clean
 clean: CMakeFiles/Jonny.dir/clean
+clean: CMakeFiles/ProblemD.dir/clean
+clean: CMakeFiles/ProblemBPracticeNADC.dir/clean
+clean: CMakeFiles/ProblemI.dir/clean
+clean: CMakeFiles/ProblemF.dir/clean
+clean: CMakeFiles/ProblemK.dir/clean
+clean: CMakeFiles/MitchellProbJ.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/YouBeTheJudge.dir
+# Target rules for target CMakeFiles/ProblemKPracticeNADC.dir
 
 # All Build rule for target.
-CMakeFiles/YouBeTheJudge.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target YouBeTheJudge"
-.PHONY : CMakeFiles/YouBeTheJudge.dir/all
+CMakeFiles/ProblemKPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target ProblemKPracticeNADC"
+.PHONY : CMakeFiles/ProblemKPracticeNADC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/YouBeTheJudge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/YouBeTheJudge.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/YouBeTheJudge.dir/rule
+CMakeFiles/ProblemKPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemKPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemKPracticeNADC.dir/rule
 
 # Convenience name for target.
-YouBeTheJudge: CMakeFiles/YouBeTheJudge.dir/rule
+ProblemKPracticeNADC: CMakeFiles/ProblemKPracticeNADC.dir/rule
 
-.PHONY : YouBeTheJudge
+.PHONY : ProblemKPracticeNADC
 
 # clean rule for target.
-CMakeFiles/YouBeTheJudge.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/clean
-.PHONY : CMakeFiles/YouBeTheJudge.dir/clean
+CMakeFiles/ProblemKPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemKPracticeNADC.dir/build.make CMakeFiles/ProblemKPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemKPracticeNADC.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MitchellProbJ.dir
+# Target rules for target CMakeFiles/ProblemAPracticeNADC.dir
 
 # All Build rule for target.
-CMakeFiles/MitchellProbJ.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target MitchellProbJ"
-.PHONY : CMakeFiles/MitchellProbJ.dir/all
+CMakeFiles/ProblemAPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target ProblemAPracticeNADC"
+.PHONY : CMakeFiles/ProblemAPracticeNADC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MitchellProbJ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MitchellProbJ.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/MitchellProbJ.dir/rule
+CMakeFiles/ProblemAPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemAPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemAPracticeNADC.dir/rule
 
 # Convenience name for target.
-MitchellProbJ: CMakeFiles/MitchellProbJ.dir/rule
+ProblemAPracticeNADC: CMakeFiles/ProblemAPracticeNADC.dir/rule
 
-.PHONY : MitchellProbJ
+.PHONY : ProblemAPracticeNADC
 
 # clean rule for target.
-CMakeFiles/MitchellProbJ.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/clean
-.PHONY : CMakeFiles/MitchellProbJ.dir/clean
+CMakeFiles/ProblemAPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemAPracticeNADC.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MitchellProbI.dir
+# Target rules for target CMakeFiles/ProblemIPracticeNADC.dir
 
 # All Build rule for target.
-CMakeFiles/MitchellProbI.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target MitchellProbI"
-.PHONY : CMakeFiles/MitchellProbI.dir/all
+CMakeFiles/ProblemIPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=34,35 "Built target ProblemIPracticeNADC"
+.PHONY : CMakeFiles/ProblemIPracticeNADC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MitchellProbI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MitchellProbI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/MitchellProbI.dir/rule
+CMakeFiles/ProblemIPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemIPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemIPracticeNADC.dir/rule
 
 # Convenience name for target.
-MitchellProbI: CMakeFiles/MitchellProbI.dir/rule
+ProblemIPracticeNADC: CMakeFiles/ProblemIPracticeNADC.dir/rule
 
-.PHONY : MitchellProbI
+.PHONY : ProblemIPracticeNADC
 
 # clean rule for target.
-CMakeFiles/MitchellProbI.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/clean
-.PHONY : CMakeFiles/MitchellProbI.dir/clean
+CMakeFiles/ProblemIPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemIPracticeNADC.dir/build.make CMakeFiles/ProblemIPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemIPracticeNADC.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ProblemF.dir
+# Target rules for target CMakeFiles/ProblemGPracticeNADC.dir
 
 # All Build rule for target.
-CMakeFiles/ProblemF.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target ProblemF"
-.PHONY : CMakeFiles/ProblemF.dir/all
+CMakeFiles/ProblemGPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=30,31 "Built target ProblemGPracticeNADC"
+.PHONY : CMakeFiles/ProblemGPracticeNADC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ProblemF.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemF.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemF.dir/rule
+CMakeFiles/ProblemGPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemGPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemGPracticeNADC.dir/rule
 
 # Convenience name for target.
-ProblemF: CMakeFiles/ProblemF.dir/rule
+ProblemGPracticeNADC: CMakeFiles/ProblemGPracticeNADC.dir/rule
 
-.PHONY : ProblemF
+.PHONY : ProblemGPracticeNADC
 
 # clean rule for target.
-CMakeFiles/ProblemF.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/clean
-.PHONY : CMakeFiles/ProblemF.dir/clean
+CMakeFiles/ProblemGPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemGPracticeNADC.dir/build.make CMakeFiles/ProblemGPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemGPracticeNADC.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Euler.dir
+# Target rules for target CMakeFiles/ProblemFPracticeNADC.dir
 
 # All Build rule for target.
-CMakeFiles/Euler.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Euler"
-.PHONY : CMakeFiles/Euler.dir/all
+CMakeFiles/ProblemFPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=28,29 "Built target ProblemFPracticeNADC"
+.PHONY : CMakeFiles/ProblemFPracticeNADC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Euler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Euler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Euler.dir/rule
+CMakeFiles/ProblemFPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemFPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemFPracticeNADC.dir/rule
 
 # Convenience name for target.
-Euler: CMakeFiles/Euler.dir/rule
+ProblemFPracticeNADC: CMakeFiles/ProblemFPracticeNADC.dir/rule
 
-.PHONY : Euler
-
-# clean rule for target.
-CMakeFiles/Euler.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/clean
-.PHONY : CMakeFiles/Euler.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProblemD.dir
-
-# All Build rule for target.
-CMakeFiles/ProblemD.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target ProblemD"
-.PHONY : CMakeFiles/ProblemD.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProblemD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemD.dir/rule
-
-# Convenience name for target.
-ProblemD: CMakeFiles/ProblemD.dir/rule
-
-.PHONY : ProblemD
+.PHONY : ProblemFPracticeNADC
 
 # clean rule for target.
-CMakeFiles/ProblemD.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/clean
-.PHONY : CMakeFiles/ProblemD.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProblemI.dir
-
-# All Build rule for target.
-CMakeFiles/ProblemI.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target ProblemI"
-.PHONY : CMakeFiles/ProblemI.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProblemI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemI.dir/rule
-
-# Convenience name for target.
-ProblemI: CMakeFiles/ProblemI.dir/rule
-
-.PHONY : ProblemI
-
-# clean rule for target.
-CMakeFiles/ProblemI.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/clean
-.PHONY : CMakeFiles/ProblemI.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProblemJ.dir
-
-# All Build rule for target.
-CMakeFiles/ProblemJ.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target ProblemJ"
-.PHONY : CMakeFiles/ProblemJ.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProblemJ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemJ.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemJ.dir/rule
-
-# Convenience name for target.
-ProblemJ: CMakeFiles/ProblemJ.dir/rule
-
-.PHONY : ProblemJ
-
-# clean rule for target.
-CMakeFiles/ProblemJ.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/clean
-.PHONY : CMakeFiles/ProblemJ.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProblemC.dir
-
-# All Build rule for target.
-CMakeFiles/ProblemC.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target ProblemC"
-.PHONY : CMakeFiles/ProblemC.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProblemC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemC.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemC.dir/rule
-
-# Convenience name for target.
-ProblemC: CMakeFiles/ProblemC.dir/rule
-
-.PHONY : ProblemC
-
-# clean rule for target.
-CMakeFiles/ProblemC.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/clean
-.PHONY : CMakeFiles/ProblemC.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ProblemK.dir
-
-# All Build rule for target.
-CMakeFiles/ProblemK.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target ProblemK"
-.PHONY : CMakeFiles/ProblemK.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ProblemK.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemK.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ProblemK.dir/rule
-
-# Convenience name for target.
-ProblemK: CMakeFiles/ProblemK.dir/rule
-
-.PHONY : ProblemK
-
-# clean rule for target.
-CMakeFiles/ProblemK.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/clean
-.PHONY : CMakeFiles/ProblemK.dir/clean
+CMakeFiles/ProblemFPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemFPracticeNADC.dir/build.make CMakeFiles/ProblemFPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemFPracticeNADC.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/10KindsOfPeople.dir
@@ -386,14 +261,14 @@ CMakeFiles/ProblemK.dir/clean:
 CMakeFiles/10KindsOfPeople.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 10KindsOfPeople"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target 10KindsOfPeople"
 .PHONY : CMakeFiles/10KindsOfPeople.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/10KindsOfPeople.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/10KindsOfPeople.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/10KindsOfPeople.dir/rule
 
 # Convenience name for target.
@@ -407,20 +282,128 @@ CMakeFiles/10KindsOfPeople.dir/clean:
 .PHONY : CMakeFiles/10KindsOfPeople.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ProblemC.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target ProblemC"
+.PHONY : CMakeFiles/ProblemC.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemC.dir/rule
+
+# Convenience name for target.
+ProblemC: CMakeFiles/ProblemC.dir/rule
+
+.PHONY : ProblemC
+
+# clean rule for target.
+CMakeFiles/ProblemC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemC.dir/build.make CMakeFiles/ProblemC.dir/clean
+.PHONY : CMakeFiles/ProblemC.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemJ.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemJ.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=36,37 "Built target ProblemJ"
+.PHONY : CMakeFiles/ProblemJ.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemJ.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemJ.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemJ.dir/rule
+
+# Convenience name for target.
+ProblemJ: CMakeFiles/ProblemJ.dir/rule
+
+.PHONY : ProblemJ
+
+# clean rule for target.
+CMakeFiles/ProblemJ.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemJ.dir/build.make CMakeFiles/ProblemJ.dir/clean
+.PHONY : CMakeFiles/ProblemJ.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Euler.dir
+
+# All Build rule for target.
+CMakeFiles/Euler.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target Euler"
+.PHONY : CMakeFiles/Euler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Euler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Euler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Euler.dir/rule
+
+# Convenience name for target.
+Euler: CMakeFiles/Euler.dir/rule
+
+.PHONY : Euler
+
+# clean rule for target.
+CMakeFiles/Euler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/clean
+.PHONY : CMakeFiles/Euler.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MitchellProbI.dir
+
+# All Build rule for target.
+CMakeFiles/MitchellProbI.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target MitchellProbI"
+.PHONY : CMakeFiles/MitchellProbI.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MitchellProbI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MitchellProbI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/MitchellProbI.dir/rule
+
+# Convenience name for target.
+MitchellProbI: CMakeFiles/MitchellProbI.dir/rule
+
+.PHONY : MitchellProbI
+
+# clean rule for target.
+CMakeFiles/MitchellProbI.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/clean
+.PHONY : CMakeFiles/MitchellProbI.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Jonny.dir
 
 # All Build rule for target.
 CMakeFiles/Jonny.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Jonny"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target Jonny"
 .PHONY : CMakeFiles/Jonny.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Jonny.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Jonny.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Jonny.dir/rule
 
 # Convenience name for target.
@@ -432,6 +415,168 @@ Jonny: CMakeFiles/Jonny.dir/rule
 CMakeFiles/Jonny.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/clean
 .PHONY : CMakeFiles/Jonny.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemD.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemD.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=24,25 "Built target ProblemD"
+.PHONY : CMakeFiles/ProblemD.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemD.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemD.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemD.dir/rule
+
+# Convenience name for target.
+ProblemD: CMakeFiles/ProblemD.dir/rule
+
+.PHONY : ProblemD
+
+# clean rule for target.
+CMakeFiles/ProblemD.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemD.dir/build.make CMakeFiles/ProblemD.dir/clean
+.PHONY : CMakeFiles/ProblemD.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemBPracticeNADC.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemBPracticeNADC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target ProblemBPracticeNADC"
+.PHONY : CMakeFiles/ProblemBPracticeNADC.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemBPracticeNADC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemBPracticeNADC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemBPracticeNADC.dir/rule
+
+# Convenience name for target.
+ProblemBPracticeNADC: CMakeFiles/ProblemBPracticeNADC.dir/rule
+
+.PHONY : ProblemBPracticeNADC
+
+# clean rule for target.
+CMakeFiles/ProblemBPracticeNADC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemBPracticeNADC.dir/build.make CMakeFiles/ProblemBPracticeNADC.dir/clean
+.PHONY : CMakeFiles/ProblemBPracticeNADC.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemI.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemI.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=32,33 "Built target ProblemI"
+.PHONY : CMakeFiles/ProblemI.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemI.dir/rule
+
+# Convenience name for target.
+ProblemI: CMakeFiles/ProblemI.dir/rule
+
+.PHONY : ProblemI
+
+# clean rule for target.
+CMakeFiles/ProblemI.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemI.dir/build.make CMakeFiles/ProblemI.dir/clean
+.PHONY : CMakeFiles/ProblemI.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemF.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemF.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=26,27 "Built target ProblemF"
+.PHONY : CMakeFiles/ProblemF.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemF.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemF.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemF.dir/rule
+
+# Convenience name for target.
+ProblemF: CMakeFiles/ProblemF.dir/rule
+
+.PHONY : ProblemF
+
+# clean rule for target.
+CMakeFiles/ProblemF.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemF.dir/build.make CMakeFiles/ProblemF.dir/clean
+.PHONY : CMakeFiles/ProblemF.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProblemK.dir
+
+# All Build rule for target.
+CMakeFiles/ProblemK.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=38,39 "Built target ProblemK"
+.PHONY : CMakeFiles/ProblemK.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProblemK.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProblemK.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ProblemK.dir/rule
+
+# Convenience name for target.
+ProblemK: CMakeFiles/ProblemK.dir/rule
+
+.PHONY : ProblemK
+
+# clean rule for target.
+CMakeFiles/ProblemK.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemK.dir/build.make CMakeFiles/ProblemK.dir/clean
+.PHONY : CMakeFiles/ProblemK.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MitchellProbJ.dir
+
+# All Build rule for target.
+CMakeFiles/MitchellProbJ.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target MitchellProbJ"
+.PHONY : CMakeFiles/MitchellProbJ.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MitchellProbJ.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MitchellProbJ.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/workspace/CinCity/Jonny/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/MitchellProbJ.dir/rule
+
+# Convenience name for target.
+MitchellProbJ: CMakeFiles/MitchellProbJ.dir/rule
+
+.PHONY : MitchellProbJ
+
+# clean rule for target.
+CMakeFiles/MitchellProbJ.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbJ.dir/build.make CMakeFiles/MitchellProbJ.dir/clean
+.PHONY : CMakeFiles/MitchellProbJ.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -16,6 +16,11 @@ add_executable(MitchellProbJ ../Mitchell/NCNA2020Regional/ProblemJ.cpp)
 add_executable(10KindsOfPeople KattisProblems/10KindsOfPeople.cpp)
 add_executable(YouBeTheJudge NADC2021/YouBeTheJudge.cpp)
 
-
+add_executable(ProblemFPracticeNADC PracticeNADC/problemF.cpp)
+add_executable(ProblemIPracticeNADC PracticeNADC/problemI.cpp)
+add_executable(ProblemAPracticeNADC PracticeNADC/problemA.cpp)
+add_executable(ProblemGPracticeNADC PracticeNADC/problemG.cpp)
+add_executable(ProblemBPracticeNADC PracticeNADC/problemB.cpp)
+add_executable(ProblemKPracticeNADC PracticeNADC/problemK.cpp)
 
 

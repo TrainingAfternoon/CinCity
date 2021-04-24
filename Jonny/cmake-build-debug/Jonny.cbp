@@ -27,46 +27,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="YouBeTheJudge">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/YouBeTheJudge" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 YouBeTheJudge"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="YouBeTheJudge/fast">
-				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/YouBeTheJudge" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 YouBeTheJudge/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="MitchellProbJ">
 				<Option output="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/MitchellProbJ" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug"/>
@@ -520,9 +480,6 @@
 		</Build>
 		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/KattisProblems/10KindsOfPeople.cpp">
 			<Option target="10KindsOfPeople"/>
-		</Unit>
-		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NADC2021/YouBeTheJudge.cpp">
-			<Option target="YouBeTheJudge"/>
 		</Unit>
 		<Unit filename="/Users/jkeane/CLionProjects/CinCity/Jonny/NCNARegional2020/ProblemC.cpp">
 			<Option target="ProblemC"/>
