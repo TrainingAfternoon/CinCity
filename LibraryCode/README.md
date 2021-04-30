@@ -6,6 +6,7 @@ Library code for CinCity
 ### String Functions
 - split function
 - trim functions
+- join function
 
 ### Graph Problems
 - Dijsktras Algorithm

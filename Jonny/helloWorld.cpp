@@ -128,6 +128,17 @@ T* readArray(int size) {
     return arr;
 }
 
+template <typename T>
+string join(vector<T> vector, const string& delimiter = ", ", const string& pre = "", const string& post = "") {
+    string result = pre;
+    for (int i = 0; i < vector.size() - 1; ++i) {
+        result += to_string(vector[i]);
+        result += delimiter;
+    }
+    result += to_string(vector[vector.size() - 1]);
+    return result + post;
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -138,10 +149,14 @@ int main() {
 //    cout << a.toString() << nl;
 //
 //    huffmanCode("hellos");
-    char* arr = readArray<char>(3);
-    for (int i = 0; i < 3; ++i) {
-        cout << arr[i] << " ";
-    }
+//    vector<int> v;
+//    cout << v.size();
+//    char* arr = readArray<char>(3);
+//    for (int i = 0; i < 3; ++i) {
+//        cout << arr[i] << " ";
+//    }
+    vector<int> v = {1, 2, 3, 4};
+    cout << join(v, ", ", "[", "]");
     return 0;
 }
 
