@@ -119,16 +119,29 @@ void huffmanCode(string s) {
     }
 }
 
+template <typename T>
+T* readArray(int size) {
+    T* arr = new T(size);
+    for (int i = 0; i< size; ++i) {
+        cin >> arr[i];
+    }
+    return arr;
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    // code here
-    PModInt a = PModInt(11, 17);
-    a = a / 5;
-    cout << a.toString() << nl;
-
-    huffmanCode("hellos");
+//    // code here
+//    PModInt a = PModInt(11, 17);
+//    a = a / 5;
+//    cout << a.toString() << nl;
+//
+//    huffmanCode("hellos");
+    char* arr = readArray<char>(3);
+    for (int i = 0; i < 3; ++i) {
+        cout << arr[i] << " ";
+    }
     return 0;
 }
 
