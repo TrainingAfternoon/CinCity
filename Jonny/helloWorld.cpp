@@ -156,7 +156,7 @@ int main() {
 //        cout << arr[i] << " ";
 //    }
     vector<int> v = {1, 2, 3, 4};
-    cout << join(v, ", ", "[", "]");
+    cout << join<int>(v, ", ", "[", "]");
     return 0;
 }
 
