@@ -1,11 +1,14 @@
+/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/RomanHolidays.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemGPracticeNADC.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemAPracticeNADC.dir
+/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/PearWiseVoting.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemIPracticeNADC.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemFPracticeNADC.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/YouBeTheJudge.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/MitchellProbJ.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/MitchellProbI.dir
+/Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/PizzaCutting.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemF.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/Euler.dir
 /Users/jkeane/CLionProjects/CinCity/Jonny/cmake-build-debug/CMakeFiles/ProblemD.dir

@@ -23,4 +23,8 @@ add_executable(ProblemGPracticeNADC PracticeNADC/problemG.cpp)
 add_executable(ProblemBPracticeNADC PracticeNADC/problemB.cpp)
 add_executable(ProblemKPracticeNADC PracticeNADC/problemK.cpp)
 
+add_executable(PearWiseVoting MSOE2021Summer/Week1/PearWiseVoting.cpp)
+add_executable(RomanHolidays MSOE2021Summer/Week1/RomanHolidays.cpp)
+add_executable(PizzaCutting MSOE2021Summer/Week1/PizzaCutting.cpp)
+
 
