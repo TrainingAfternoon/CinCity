@@ -90,7 +90,11 @@ int main() {
         numerals[i - 1] = genRomanNum(i).first;
     }
     sort(numerals, numerals + 1000);
-
+    for (int i = 0; i < 1000;++i) {
+        cout << i + 1 << " " << numerals[i] << endl;
+    }
+    int MLoc = 1 + distance(numerals, find(numerals, numerals + 1000, "M"));
+//    cout << MLoc << endl;
     int n;
     cin >> n;
     int nums[n];
@@ -100,24 +104,20 @@ int main() {
         cin >> num;
         pair<string, int> roman = genRomanNum(num);
         if (num > 1000 ||
-                find(numerals, numerals + 999, roman.first) <=
-                find(numerals, numerals + 999, "M")) {
-            nums[i] = 1 + roman.second * 1000 +
+                find(numerals, numerals + 1000, roman.first) <=
+                find(numerals, numerals + 1000, "M")) {
+            nums[i] = 1 + roman.second * MLoc +
                     distance(numerals, find(numerals, numerals + 1000, roman.first));
             if (nums[i] < min) {
                 min = nums[i];
             }
         } else {
-            nums[i] = -1 * (1 + distance(numerals, find(numerals, numerals + 1000, roman.first)));
-            if (nums[i] > max) {
+            nums[i] = -1 * (1 + distance(find(numerals, numerals + 1000, roman.first), numerals + 1000));
+            if (nums[i] > max) { // trying to get to actual -1
                 max = nums[i];
             }
         }
     }
-//    if (min == -1000000007) {
-//        nums[n - 1] = -1;
-//        min = -1;
-//    }
     for (int i = 0; i < n; ++i) {
         if (nums[i] > 0) {
             cout << (nums[i] - min + 1) << endl;
