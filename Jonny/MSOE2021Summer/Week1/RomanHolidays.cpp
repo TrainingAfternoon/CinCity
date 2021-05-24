@@ -85,7 +85,6 @@ pair<string, int> genRomanNum(int val) {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
-
     for (int i = 1; i <= 1000; ++i) {
         numerals[i - 1] = genRomanNum(i).first;
     }
