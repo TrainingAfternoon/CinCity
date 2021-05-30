@@ -13,7 +13,6 @@ add_executable(ProblemC NCNARegional2020/ProblemC.cpp)
 add_executable(ProblemF NCNARegional2020/ProblemF.cpp)
 add_executable(MitchellProbI ../Mitchell/NCNA2020Regional/ProblemI.cpp)
 add_executable(MitchellProbJ ../Mitchell/NCNA2020Regional/ProblemJ.cpp)
-add_executable(10KindsOfPeople KattisProblems/10KindsOfPeople.cpp)
 add_executable(YouBeTheJudge NADC2021/YouBeTheJudge.cpp)
 
 add_executable(ProblemFPracticeNADC PracticeNADC/problemF.cpp)
@@ -22,9 +21,5 @@ add_executable(ProblemAPracticeNADC PracticeNADC/problemA.cpp)
 add_executable(ProblemGPracticeNADC PracticeNADC/problemG.cpp)
 add_executable(ProblemBPracticeNADC PracticeNADC/problemB.cpp)
 add_executable(ProblemKPracticeNADC PracticeNADC/problemK.cpp)
-
-add_executable(PearWiseVoting MSOE2021Summer/Week1/PearWiseVoting.cpp)
-add_executable(RomanHolidays MSOE2021Summer/Week1/RomanHolidays.cpp)
-add_executable(PizzaCutting MSOE2021Summer/Week1/PizzaCutting.cpp)
 
 

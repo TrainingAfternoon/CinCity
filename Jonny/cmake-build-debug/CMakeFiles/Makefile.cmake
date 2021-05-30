@@ -52,16 +52,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/RomanHolidays.dir/DependInfo.cmake"
   "CMakeFiles/ProblemGPracticeNADC.dir/DependInfo.cmake"
   "CMakeFiles/ProblemAPracticeNADC.dir/DependInfo.cmake"
-  "CMakeFiles/PearWiseVoting.dir/DependInfo.cmake"
   "CMakeFiles/ProblemIPracticeNADC.dir/DependInfo.cmake"
   "CMakeFiles/ProblemFPracticeNADC.dir/DependInfo.cmake"
-  "CMakeFiles/YouBeTheJudge.dir/DependInfo.cmake"
   "CMakeFiles/MitchellProbJ.dir/DependInfo.cmake"
+  "CMakeFiles/YouBeTheJudge.dir/DependInfo.cmake"
   "CMakeFiles/MitchellProbI.dir/DependInfo.cmake"
-  "CMakeFiles/PizzaCutting.dir/DependInfo.cmake"
   "CMakeFiles/ProblemF.dir/DependInfo.cmake"
   "CMakeFiles/Euler.dir/DependInfo.cmake"
   "CMakeFiles/ProblemD.dir/DependInfo.cmake"
@@ -71,6 +68,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ProblemJ.dir/DependInfo.cmake"
   "CMakeFiles/ProblemC.dir/DependInfo.cmake"
   "CMakeFiles/ProblemK.dir/DependInfo.cmake"
-  "CMakeFiles/10KindsOfPeople.dir/DependInfo.cmake"
   "CMakeFiles/Jonny.dir/DependInfo.cmake"
   )
