@@ -131,19 +131,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RomanHolidays
-
-# Build rule for target.
-RomanHolidays: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RomanHolidays
-.PHONY : RomanHolidays
-
-# fast build rule for target.
-RomanHolidays/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RomanHolidays.dir/build.make CMakeFiles/RomanHolidays.dir/build
-.PHONY : RomanHolidays/fast
-
-#=============================================================================
 # Target rules for targets named ProblemGPracticeNADC
 
 # Build rule for target.
@@ -168,19 +155,6 @@ ProblemAPracticeNADC: cmake_check_build_system
 ProblemAPracticeNADC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProblemAPracticeNADC.dir/build.make CMakeFiles/ProblemAPracticeNADC.dir/build
 .PHONY : ProblemAPracticeNADC/fast
-
-#=============================================================================
-# Target rules for targets named PearWiseVoting
-
-# Build rule for target.
-PearWiseVoting: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PearWiseVoting
-.PHONY : PearWiseVoting
-
-# fast build rule for target.
-PearWiseVoting/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PearWiseVoting.dir/build.make CMakeFiles/PearWiseVoting.dir/build
-.PHONY : PearWiseVoting/fast
 
 #=============================================================================
 # Target rules for targets named ProblemIPracticeNADC
@@ -209,19 +183,6 @@ ProblemFPracticeNADC/fast:
 .PHONY : ProblemFPracticeNADC/fast
 
 #=============================================================================
-# Target rules for targets named YouBeTheJudge
-
-# Build rule for target.
-YouBeTheJudge: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YouBeTheJudge
-.PHONY : YouBeTheJudge
-
-# fast build rule for target.
-YouBeTheJudge/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
-.PHONY : YouBeTheJudge/fast
-
-#=============================================================================
 # Target rules for targets named MitchellProbJ
 
 # Build rule for target.
@@ -235,6 +196,19 @@ MitchellProbJ/fast:
 .PHONY : MitchellProbJ/fast
 
 #=============================================================================
+# Target rules for targets named YouBeTheJudge
+
+# Build rule for target.
+YouBeTheJudge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YouBeTheJudge
+.PHONY : YouBeTheJudge
+
+# fast build rule for target.
+YouBeTheJudge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YouBeTheJudge.dir/build.make CMakeFiles/YouBeTheJudge.dir/build
+.PHONY : YouBeTheJudge/fast
+
+#=============================================================================
 # Target rules for targets named MitchellProbI
 
 # Build rule for target.
@@ -246,19 +220,6 @@ MitchellProbI: cmake_check_build_system
 MitchellProbI/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MitchellProbI.dir/build.make CMakeFiles/MitchellProbI.dir/build
 .PHONY : MitchellProbI/fast
-
-#=============================================================================
-# Target rules for targets named PizzaCutting
-
-# Build rule for target.
-PizzaCutting: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PizzaCutting
-.PHONY : PizzaCutting
-
-# fast build rule for target.
-PizzaCutting/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PizzaCutting.dir/build.make CMakeFiles/PizzaCutting.dir/build
-.PHONY : PizzaCutting/fast
 
 #=============================================================================
 # Target rules for targets named ProblemF
@@ -378,19 +339,6 @@ ProblemK/fast:
 .PHONY : ProblemK/fast
 
 #=============================================================================
-# Target rules for targets named 10KindsOfPeople
-
-# Build rule for target.
-10KindsOfPeople: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 10KindsOfPeople
-.PHONY : 10KindsOfPeople
-
-# fast build rule for target.
-10KindsOfPeople/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/build
-.PHONY : 10KindsOfPeople/fast
-
-#=============================================================================
 # Target rules for targets named Jonny
 
 # Build rule for target.
@@ -402,114 +350,6 @@ Jonny: cmake_check_build_system
 Jonny/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Jonny.dir/build.make CMakeFiles/Jonny.dir/build
 .PHONY : Jonny/fast
-
-KattisProblems/10KindsOfPeople.o: KattisProblems/10KindsOfPeople.cpp.o
-
-.PHONY : KattisProblems/10KindsOfPeople.o
-
-# target to build an object file
-KattisProblems/10KindsOfPeople.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.o
-.PHONY : KattisProblems/10KindsOfPeople.cpp.o
-
-KattisProblems/10KindsOfPeople.i: KattisProblems/10KindsOfPeople.cpp.i
-
-.PHONY : KattisProblems/10KindsOfPeople.i
-
-# target to preprocess a source file
-KattisProblems/10KindsOfPeople.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.i
-.PHONY : KattisProblems/10KindsOfPeople.cpp.i
-
-KattisProblems/10KindsOfPeople.s: KattisProblems/10KindsOfPeople.cpp.s
-
-.PHONY : KattisProblems/10KindsOfPeople.s
-
-# target to generate assembly for a file
-KattisProblems/10KindsOfPeople.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/10KindsOfPeople.dir/build.make CMakeFiles/10KindsOfPeople.dir/KattisProblems/10KindsOfPeople.cpp.s
-.PHONY : KattisProblems/10KindsOfPeople.cpp.s
-
-MSOE2021Summer/Week1/PearWiseVoting.o: MSOE2021Summer/Week1/PearWiseVoting.cpp.o
-
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.o
-
-# target to build an object file
-MSOE2021Summer/Week1/PearWiseVoting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PearWiseVoting.dir/build.make CMakeFiles/PearWiseVoting.dir/MSOE2021Summer/Week1/PearWiseVoting.cpp.o
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.cpp.o
-
-MSOE2021Summer/Week1/PearWiseVoting.i: MSOE2021Summer/Week1/PearWiseVoting.cpp.i
-
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.i
-
-# target to preprocess a source file
-MSOE2021Summer/Week1/PearWiseVoting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PearWiseVoting.dir/build.make CMakeFiles/PearWiseVoting.dir/MSOE2021Summer/Week1/PearWiseVoting.cpp.i
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.cpp.i
-
-MSOE2021Summer/Week1/PearWiseVoting.s: MSOE2021Summer/Week1/PearWiseVoting.cpp.s
-
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.s
-
-# target to generate assembly for a file
-MSOE2021Summer/Week1/PearWiseVoting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PearWiseVoting.dir/build.make CMakeFiles/PearWiseVoting.dir/MSOE2021Summer/Week1/PearWiseVoting.cpp.s
-.PHONY : MSOE2021Summer/Week1/PearWiseVoting.cpp.s
-
-MSOE2021Summer/Week1/PizzaCutting.o: MSOE2021Summer/Week1/PizzaCutting.cpp.o
-
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.o
-
-# target to build an object file
-MSOE2021Summer/Week1/PizzaCutting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PizzaCutting.dir/build.make CMakeFiles/PizzaCutting.dir/MSOE2021Summer/Week1/PizzaCutting.cpp.o
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.cpp.o
-
-MSOE2021Summer/Week1/PizzaCutting.i: MSOE2021Summer/Week1/PizzaCutting.cpp.i
-
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.i
-
-# target to preprocess a source file
-MSOE2021Summer/Week1/PizzaCutting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PizzaCutting.dir/build.make CMakeFiles/PizzaCutting.dir/MSOE2021Summer/Week1/PizzaCutting.cpp.i
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.cpp.i
-
-MSOE2021Summer/Week1/PizzaCutting.s: MSOE2021Summer/Week1/PizzaCutting.cpp.s
-
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.s
-
-# target to generate assembly for a file
-MSOE2021Summer/Week1/PizzaCutting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PizzaCutting.dir/build.make CMakeFiles/PizzaCutting.dir/MSOE2021Summer/Week1/PizzaCutting.cpp.s
-.PHONY : MSOE2021Summer/Week1/PizzaCutting.cpp.s
-
-MSOE2021Summer/Week1/RomanHolidays.o: MSOE2021Summer/Week1/RomanHolidays.cpp.o
-
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.o
-
-# target to build an object file
-MSOE2021Summer/Week1/RomanHolidays.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RomanHolidays.dir/build.make CMakeFiles/RomanHolidays.dir/MSOE2021Summer/Week1/RomanHolidays.cpp.o
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.cpp.o
-
-MSOE2021Summer/Week1/RomanHolidays.i: MSOE2021Summer/Week1/RomanHolidays.cpp.i
-
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.i
-
-# target to preprocess a source file
-MSOE2021Summer/Week1/RomanHolidays.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RomanHolidays.dir/build.make CMakeFiles/RomanHolidays.dir/MSOE2021Summer/Week1/RomanHolidays.cpp.i
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.cpp.i
-
-MSOE2021Summer/Week1/RomanHolidays.s: MSOE2021Summer/Week1/RomanHolidays.cpp.s
-
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.s
-
-# target to generate assembly for a file
-MSOE2021Summer/Week1/RomanHolidays.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RomanHolidays.dir/build.make CMakeFiles/RomanHolidays.dir/MSOE2021Summer/Week1/RomanHolidays.cpp.s
-.PHONY : MSOE2021Summer/Week1/RomanHolidays.cpp.s
 
 NADC2021/YouBeTheJudge.o: NADC2021/YouBeTheJudge.cpp.o
 
@@ -978,13 +818,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 10KindsOfPeople"
 	@echo "... Euler"
 	@echo "... Jonny"
 	@echo "... MitchellProbI"
 	@echo "... MitchellProbJ"
-	@echo "... PearWiseVoting"
-	@echo "... PizzaCutting"
 	@echo "... ProblemAPracticeNADC"
 	@echo "... ProblemBPracticeNADC"
 	@echo "... ProblemC"
@@ -997,20 +834,7 @@ help:
 	@echo "... ProblemJ"
 	@echo "... ProblemK"
 	@echo "... ProblemKPracticeNADC"
-	@echo "... RomanHolidays"
 	@echo "... YouBeTheJudge"
-	@echo "... KattisProblems/10KindsOfPeople.o"
-	@echo "... KattisProblems/10KindsOfPeople.i"
-	@echo "... KattisProblems/10KindsOfPeople.s"
-	@echo "... MSOE2021Summer/Week1/PearWiseVoting.o"
-	@echo "... MSOE2021Summer/Week1/PearWiseVoting.i"
-	@echo "... MSOE2021Summer/Week1/PearWiseVoting.s"
-	@echo "... MSOE2021Summer/Week1/PizzaCutting.o"
-	@echo "... MSOE2021Summer/Week1/PizzaCutting.i"
-	@echo "... MSOE2021Summer/Week1/PizzaCutting.s"
-	@echo "... MSOE2021Summer/Week1/RomanHolidays.o"
-	@echo "... MSOE2021Summer/Week1/RomanHolidays.i"
-	@echo "... MSOE2021Summer/Week1/RomanHolidays.s"
 	@echo "... NADC2021/YouBeTheJudge.o"
 	@echo "... NADC2021/YouBeTheJudge.i"
 	@echo "... NADC2021/YouBeTheJudge.s"
