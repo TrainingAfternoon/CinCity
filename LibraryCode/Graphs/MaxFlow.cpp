@@ -176,7 +176,7 @@ namespace MaxFlow {
             return -1;
         }
 
-        // contents for if dfs is needed
+        /// contents for if dfs is needed
         set<int> dfs_visited;
 
         /// Searches for sink starting from source (depth search)
