@@ -175,6 +175,36 @@ namespace MaxFlow {
             }
             return -1;
         }
+
+        // contents for if dfs is needed
+        set<int> dfs_visited;
+
+        /// Searches for sink starting from source (depth search)
+        /// \return The flow for a path to sink (-1 if fails)
+        int dfs() {
+            dfs_visited.clear();
+            dfs_visited.insert(SOURCE);
+            return dfs(SOURCE, INT_MAX);
+        }
+
+        /// Recursive portion of dfs
+        /// \return The flow for a path to sink (-1 if fails)
+        int dfs(int curr, int min_) {
+            if (curr == SINK) return min_;
+            for (auto nextConn: nodes[curr].conns) {
+                int to = nextConn.second->to_(curr);
+                W fwCap = nextConn.second->fwCap_(curr);
+                if (dfs_visited.count(to) == 0 && fwCap > 0) {
+                    dfs_visited.insert(to);
+                    parents[to] = curr;
+                    int search = dfs(to, min(min_, fwCap));
+                    if (search != -1) {
+                        return search;
+                    }
+                }
+            }
+            return -1;
+        }
     };
 }
 
