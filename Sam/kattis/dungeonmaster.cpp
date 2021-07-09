@@ -57,70 +57,37 @@ static inline void trim(std::string &s) {ltrim(s);rtrim(s);}
 void fastinput(){ios_base::sync_with_stdio(0); cout.tie(0); cin.tie(0);}
 
 // -------------------MAIN CODE-------------------//
-#define rt recursive_traverse
-int abs_min;
+#define base const int l, const int r, const int c, const int sl, const int sr, const int sc
+#define base_in l,r,c,sl,sr,sc
+#define valid_in grid,l,r,c
+#define coord tuple<int,int,int>
 
-void recursive_traverse(char*** grid, int l, int r, int c, int cl, int cr, int cc, set<tuple<int,int,int>> visited, int min) {
-    /*if(cl == l || cr == r || cc == c || grid[cl][cr][cc] == '#') {
-        return 0;
-    }
-    if(grid[cl][cr][cc] == 'E') {
-        return INT_MAX;
-    }
-    return rt(grid, l, r, c, cl+1, cr, cc) + rt(grid, l, r, c, cl, cr+1, cc) + rt(grid, l, r, c, cl, cr, cc+1);
-    */
-    if(cl < l && cr < r && cc < c && cl >= 0 && cr >= 0 && cc >= 0 && grid[cl][cr][cc] != '#' && visited.find(tuple<int,int,int>{cl,cr,cc}) == visited.end()) {
-        visited.insert(tuple<int,int,int>{cl,cr,cc});
-        //cout << cl << " " << cr << " " << cc << " " << grid[cl][cr][cc] << " " << min << endl;
-        if(grid[cl][cr][cc] == 'E' && min < abs_min) { abs_min = min; } //return 1;
-        rt(grid,l,r,c,cl+1,cr,cc,visited,min+1);
-        rt(grid,l,r,c,cl,cr+1,cc,visited,min+1);
-        rt(grid,l,r,c,cl,cr,cc+1,visited,min+1);
-        rt(grid,l,r,c,cl-1,cr,cc,visited,min+1);
-        rt(grid,l,r,c,cl,cr-1,cc,visited,min+1);
-        rt(grid,l,r,c,cl,cr,cc-1,visited,min+1);
+struct Node {
+    coord point;
+    int dist;
+} typedef node;
 
-        /*if(rt(grid,l,r,c,cl+1,cr,cc,visited,min+1)) {
-            cout << "triggered" << min << endl;
-            return min+1;
-        }
-        if(rt(grid,l,r,c,cl,cr+1,cc,visited,min+1)) {
-            return min+1;
-        }
-        if(rt(grid,l,r,c,cl,cr,cc+1,visited,min+1)) return min+1;
-        if(rt(grid,l,r,c,cl-1,cr,cc,visited,min+1)) {
-            return min+1;
-        }
-        if(rt(grid,l,r,c,cl,cr-1,cc,visited,min+1)) {
-            return min+1;
-        }
-        if(rt(grid,l,r,c,cl,cr,cc-1,visited,min+1)) return min+1;
-        //return (rt(grid,l,r,c,cl+1,cr,cc,visited,min+1) || rt(grid,l,r,c,cl,cr+1,cc,min+1) || rt(grid,l,r,c,cl,cr,cc+1,min+1)) ? min : -1;*/
-    }
-    //return 0;
-}
-
-int traverse(char*** grid, int l, int r, int c, int sl, int sr, int sc) {
-    abs_min = INT_MAX;
-    set<tuple<int,int,int>> visited;
-    recursive_traverse(grid, l, r, c, sl, sr, sl, visited, 0);
-    return abs_min;
+bool valid(char ***grid, int l, int r, int c, int x, int y, int z) {
+    return (x >= 0 && y >= 0 && z >= 0 && x < l && y < r && z < c && grid[x][y][z] != '#');
 }
 
 int main(){
     fastinput();
 
     //---------SOLUTION----------//
-    //Ohhhh, this is insideous. 3d graph traversal
-    int l, r, c;
+    int l, r, c, sl, sr, sc;
     cin >> l >> r >> c;
-    do { 
-        int sl, sr, sc;
-        char*** grid = new char**[l];
+    
+    do {
+        bool ***visited = new bool**[l];
+        char ***grid = new char**[l];
+        coord end;
         repi(l) {
             grid[i] = new char*[r];
+            visited[i] = new bool*[r];
             repj(r) {
                 grid[i][j] = new char[c];
+                visited[i][j] = new bool[c];
                 repk(c) {
                     cin >> grid[i][j][k];
                     if(grid[i][j][k] == 'S') {
@@ -128,35 +95,72 @@ int main(){
                         sr = j;
                         sc = k;
                     }
+                    if(grid[i][j][k] == 'E') {
+                        end = coord{i,j,k};
+                    }
                 }
             }
-            //TODO: maybe deal with the separating lines?
         }
 
-        /*repi(l) {
-            repj(r) {
-                repk(c) {
-                    cout << grid[i][j][k];
-                }
-                cout << endl;
+        visited[sl][sr][sc] = true;
+        queue<node> q;
+        q.push(node{ coord{sl,sr,sc}, 0 });
+
+        int min_dist = -1;
+        while(!q.empty() && min_dist == -1) {
+            node curr = q.front();
+            //cout << "curr: " << get<0>(curr.point) << "," << get<1>(curr.point) << "," << get<2>(curr.point) << endl;
+
+            if(curr.point == end) {
+                min_dist = curr.dist;
             }
-        }*/
-        
-        //int minutes = -1;
-        int minutes = traverse(grid, l, r, c, sl, sr, sc);
-        //cout << minutes << endl;
-        if(minutes == INT_MAX) {
+
+            q.pop();
+            
+            //Scan children
+            //up, down, left, right, forward, back
+            int bounds[3]; bounds[0] = l; bounds[1] = r; bounds[2] = c;
+            int indices[3]; indices[0] = get<0>(curr.point); indices[1] = get<1>(curr.point); indices[2] = get<2>(curr.point);
+            for(int i = 0; i < 3; i++) {
+                for(int j = -1; j < 2; j++) {
+                    //This right here is causing the segfault
+                    //The array is probably storing a reference instead of a copy :(
+                    indices[i] += j;
+                    if(indices[i] >= bounds[i] || indices[i] < 0) {
+                        indices[i] -= j;
+                        continue;
+                    }
+                    if(grid[indices[0]][indices[1]][indices[2]] != '#' && !visited[indices[0]][indices[1]][indices[2]]) {
+                        q.push(node{ coord{indices[0],indices[1],indices[2]}, curr.dist+1 });
+                        visited[indices[0]][indices[1]][indices[2]] = true;
+                    }
+                    indices[i] -= j;
+                }
+            }
+            /*for(int i = -1; i < 2; i++) {
+                int x = u+i;
+                if(x < 0 || x >= l) continue;
+                for(int j = -1; j < 2; j++) {
+                    int y = n+j;
+                    if(y < 0 || y >= r) continue;
+                    for(int k = -1; k < 2; k++) {
+                        int z = o+k;
+                        if(z < 0 || z >= c) continue;
+                        if(grid[x][y][z] != '#' && !visited[x][y][z]) {
+                            cout << "\t"<< x << " " << y << " " << z << endl;
+                            q.push(node{ coord{x,y,z}, curr.dist+1 });
+                            visited[x][y][z] = true;
+                        }
+                    }
+                }
+            }*/
+        }
+
+        if(min_dist == -1) {
             cout << "Trapped!" << endl;
         } else {
-            cout << "Escaped in " << minutes << " minute(s)." << endl;
+            cout << "Escaped in " << min_dist << " minute(s)." << endl;
         }
-
-        repi(l) {
-            repj(r) {
-                delete grid[i][j];
-            }
-        }
-        delete grid;
         cin >> l >> r >> c;
     } while(l != 0 && r != 0 && c != 0);
     return 0;
