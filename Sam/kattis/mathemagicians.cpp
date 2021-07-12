@@ -242,6 +242,21 @@ void inverse_solve(const string& a, const string& b) {
     cout << (is_inverse && edge_match(a,b) || !is_inverse && matching_sets(b) && matching_cross_pairs(a,b) ? "yes" : "no") << endl;
 }
 
+bool check_switches(const string& a) {
+    for(int i = 1; i < a.length(); i++) {
+        if(a.at(i - 1) == a.at(i)) return true;
+    }
+    return a.at(0) == a.back();
+}
+
+int runs(const string& a) {
+    int runs = 1;
+    for(int i = 1; i < a.length(); i++) {
+        if(a.at(i-1) != a.at(i)) runs++;   
+    }
+    return (runs&1) ? runs-1 : runs; //always even number of runs
+}
+
 int main(){
     fastinput();
 
@@ -253,7 +268,23 @@ int main(){
     cin >> beg;
     cin >> end;
     //brute_force_solve(beg, end, beg);
-    circular_brute_force_solve(end, beg);
-    inverse_solve(beg, end);
+    //circular_brute_force_solve(end, beg);
+    //inverse_solve(beg, end);
+    //Rules:
+    //you can never have more pairs than you start with
+    //you can have an inverse, only if the ends are the same
+    //  this is a subcase of "there must be a switch"
+    
+    int pure = runs(beg);
+    int transformed = runs(end);
+
+    //cout << pure << endl;
+    //cout << transformed << endl;
+
+    string ans = "no";
+    if(pure > 1 && (transformed < pure || transformed == pure && check_switches(beg))) {
+        ans = "yes";
+    }
+    cout << ans << endl;
     return 0;
 }
