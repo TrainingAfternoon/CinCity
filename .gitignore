@@ -1,0 +1,12 @@
+#Java files
+*.class
+
+#Haskell Files
+*.hi
+*.ho
+
+#Sam's ignored files
+/Sam/junkyard/*
+
+#CPP compiled
+Solution
