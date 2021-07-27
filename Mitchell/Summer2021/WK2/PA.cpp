@@ -27,15 +27,30 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    string name, start, born;
+    int n, year, course;
+    cin>>n;
+    while(n--){
+        cin>>name>>start>>born>>course;
+        cout<<name<<" ";
+        if(stoi(start.substr(0,4)) >= 2010 || stoi(born.substr(0,4)) >= 1991){
+            cout<<"eligible"<<nn;
+        } else if(course > 40){
+            cout<<"ineligible"<<nn;
+        } else {
+            cout<<"coach petitions"<<nn;
+        }
+    }
 
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

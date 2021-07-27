@@ -30,7 +30,19 @@ const int MOD = 1e9 + 7;
 
 // -------------------SOLUTION--------------------//
 int solve(){
-
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int k = n;
+        while(n){
+            k--;
+            n&=k;
+        }
+        cout<<k<<endl;
+    }
+    return 0;
 }
 
 
@@ -39,3 +51,4 @@ int main(){
     solve();
     return 0;
 }
+

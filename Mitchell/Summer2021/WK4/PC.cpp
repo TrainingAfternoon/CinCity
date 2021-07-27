@@ -27,15 +27,40 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    int n, m;
+    cin>>n>>m;
+    vi task(n);
+    vi quiet(m);
+    for(int i = 0; i < n; i++) cin>>task[i];
+    for(int i = 0; i < m; i++) cin>>quiet[i];
 
+    sort(task.begin(), task.end(), greater<int>());
+    sort(quiet.begin(), quiet.end(), greater<int>());
+
+//    for(int i = 0; i < n; i++) cout<<task[i]<<" ";
+//    cout<<nn;
+//    for(int i = 0; i < m; i++) cout<<quiet[i]<<" ";
+//    cout<<nn;
+
+    int i = 0, j = 0;
+    while(i < n && j < m){
+        if(task[i] <= quiet[j]){
+            i++;
+            j++;
+        } else {
+            i++;
+        }
+    }
+    cout<<j;
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

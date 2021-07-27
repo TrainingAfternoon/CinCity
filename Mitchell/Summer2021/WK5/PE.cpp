@@ -27,15 +27,47 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    int n;
+    vpii fav;
+    cin>>n;
+    int j;
+    for(int i = 0; i < n; i++){
+        cin>>j;
+        fav.pb(mp(j, i+1));
+        //cout<<fav[i].first<<nn;
+    }
+//    for(int i = 0; i< n; i++){
+//        cout<<fav[i].first<<" ";
+//    }
+//    cout<<nn;
 
+    int index = 0;
+    int cur;
+
+    while(n!=1){
+        //cout<<"at index "<<index<<" w/ fav num "<<fav[index].first<<nn;
+        pii p = fav[index];
+        cur = ((p.first)-1) % n;
+        index += cur;
+        index = index%n;
+        //cout<<index<<nn;
+
+        fav.erase(fav.begin() + index);
+
+        n--;
+        if(index == n) index = 0;
+    }
+    cout<<fav[0].second;
+
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

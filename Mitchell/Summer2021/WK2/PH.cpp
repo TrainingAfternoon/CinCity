@@ -27,15 +27,26 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
+    int n, t;
+    cin>>n>>t;
+    int sum = 0;
+    int i = 0;
+    for(; i < n; i++){
+        int cur;
+        cin>>cur;
+        sum+=cur;
+        if(sum > t) break;
+    }
+    cout<<i<<nn;
 
+    return 0;
 }
-
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+
