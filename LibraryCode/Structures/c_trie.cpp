@@ -37,28 +37,6 @@ void add_word(node *head, string& word) {
     }
 }
 
-
-short add_word(node *head, string& word) {
-    //cout << word << endl;
-    if(head == NULL) {
-        head = get_node();
-    }
-    if(!word.empty()) {
-        if(head->children[get_key(word.front())] == NULL) {
-            head->children[get_key(word.front())] = get_node_s(word.front());
-        }
-        head = head->children[get_key(word.front())];
-        word.erase(0, 1);
-    }
-    if(word.empty()) { //Slightly less recursion required this way
-        short ret = (head->is_word) ? (head->duplicate_weight > 0) ? head->duplicate_weight-- : 0 : 0;
-        head->is_word = true;
-        return ret;
-    } else {
-        return add_word(head, word);
-    }
-}
-
 void free(node *head) {
     for(int i = 0; i < sizeof((head->children))/sizeof(node*); i++) {
         if(head->children[i] != NULL) {
