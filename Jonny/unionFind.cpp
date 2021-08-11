@@ -107,10 +107,10 @@ public:
         a = find(a);
         b = find(b);
         if (data[a].size < data[b].size) {
-            data[b].rep = data[a].rep;
+            data[a].rep = data[b].rep;
             data[b].size += data[a].size;
         } else {
-            data[a].rep = data[b].rep;
+            data[b].rep = data[a].rep;
             data[a].size += data[b].size;
         }
     }
