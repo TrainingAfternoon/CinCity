@@ -27,15 +27,46 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
+int pal(int i){
+    int one, ten, hundred;
+    i = i%1000;
+    one = i%10;
+    ten = (i/10)%10;
+    hundred = (i/100);
+    return 1000 * i + 100 * one  + 10 * ten+ hundred ;
+}
 
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    int N, i, o;
+    cin>>N;
+    int f, t;
+    int fMin;
 
+    for(int x = 0; x < N; x++){
+        cin>>o;
+        i=o/1000;
+        fMin = 1e9;
+        f = -1;
+
+        for(int p = -1; p <= 1; p++){
+            t = pal(i + p);
+            int min = abs(o-t);
+            if(min < fMin){
+                fMin = min;
+                f = t;
+            }
+        }
+        cout<<f<<nn;
+    }
+
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

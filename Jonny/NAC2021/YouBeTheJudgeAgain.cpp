@@ -1,4 +1,37 @@
 //
+// Created by Jonny Keane on 8/14/21.
+//
+
+#include <bits/stdc++.h>
+
+#define ll long long
+#define ld long double
+#define pb push_back
+
+#define V vector
+#define vi V<int>
+#define vll V<ll>
+#define vd V<double>
+#define pii pair<int, int>
+#define pll pair<ll,ll>
+#define vpii V<pii>
+#define vpll V<pll>
+#define graph V<vi>
+
+// loops
+#define WHILE(n) while(n--)
+#define FOR(a) for(ll i=0;i<a;i++)
+#define FIND(a, e) find(a.begin(), a.end(), e)
+#define minimum(a) *min_element(a.begin(), a.end())
+#define maximum(a) *max_element(a.begin(), a.end())
+
+#define nl '\n'
+
+// use M_PI for PI (imported from cmath within stdc++.h)
+
+using namespace std;
+
+//
 // Created by Jonny Keane on 4/15/21.
 //
 #include <bits/stdc++.h>
@@ -159,3 +192,65 @@ public:
         }
     }
 };
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    int solves[4][2][2] = {{{0, 1}, {1, 0}}, {{1, 1}, {0, 1}}, {{1, 0}, {1, 1}}, {{1, -1}, {1, 0}}};
+    long n;
+    cin >> n;
+    long dim = 1 << n;
+    long goal = ((1 << (2 * n)) - 1) / 3;
+    long grid[dim][dim];
+    bool used[dim][dim];
+    bool zero_found = false;
+    for (int i = 0; i < dim; ++i) {
+        for (int j = 0; j < dim; ++j) {
+            cin >> grid[i][j];
+            used[i][j] = false;
+            if (grid[i][j] == 0) {
+                if (!zero_found) {
+                    zero_found = true;
+                } else {
+                    cout << 0 << endl;
+                    return 0;
+                }
+            }
+        }
+    }
+    unordered_set<long> components;
+    for (long y = 0; y < dim; ++y) {
+        for (long x = 0; x < dim; ++x) {
+            if (used[y][x]) continue;
+            used[y][x] = true;
+            bool valid = false;
+            for (auto & solve: solves) {
+                bool does_solve = true;
+                for (auto & delta: solve) {
+                    long dx = delta[1] + x;
+                    long dy = delta[0] + y;
+                    if (dx < 0 || dx >= dim || dy < 0 || dy >= dim || grid[dy][dx] != grid[y][x]) {
+                        does_solve = false;
+                        break;
+                    }
+                    used[dy][dx] = true;
+                }
+                if (does_solve) {
+                    valid = true;
+                    break;
+                }
+            }
+            if (valid) {
+                components.insert(grid[y][x]);
+            }
+        }
+    }
+    if (components.size() == goal && zero_found) {
+        cout << 1 << endl;
+    } else {
+        cout << 0 << endl;
+    }
+
+    return 0;
+}

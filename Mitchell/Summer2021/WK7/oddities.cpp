@@ -10,13 +10,16 @@
 // collection shorthand
 #define V vector
 #define vi V<int>
-#define vll V<ll> #define vd V<double>
+#define vii V<vi>
+#define vll V<ll> 
+#define vd V<double>
 #define pii pair<int, int>
 #define pll pair<ll,ll>
 #define vpii V<pii>
 #define vpll V<pll>
 
-// loops
+// funcs 
+#define inRange(x,y,l,w) (x >= 0 && x < l && y >= 0 && y < w)
 #define minimum(a) *min_element(a.begin(), a.end())
 #define maximum(a) *max_element(a.begin(), a.end())
 #define in_map(m,e) (m.find(e) == m.end())
@@ -27,15 +30,30 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
+// -------------------STRUCTS---------------------//
+
+
+// -------------------FUNCTIONS-------------------//
+
 
 // -------------------SOLUTION--------------------//
 int solve(){
+    int t;
+    cin>>t;
+    while(t--){
+        int cur;
+        cin>>cur;
+        if((cur & 1) == 1) cout<<cur<<" is odd"<<nn;
+        else cout<<cur<<" is even"<<nn;
+    }
 
+
+    return 0;
 }
-
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

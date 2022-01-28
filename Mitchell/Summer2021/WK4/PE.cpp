@@ -27,15 +27,22 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    string word;
+    cin>>word;
+    if(word.find("ss") == string::npos){
+        cout<<"no ";
+    }
+    cout<<"hiss";
 
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

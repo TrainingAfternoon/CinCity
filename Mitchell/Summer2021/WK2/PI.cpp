@@ -27,15 +27,37 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
+struct trie {
+    int instances;
+    char letter;
+    trie* nextLetter[52];
+
+    trie(char l){
+        letter = l;
+    }
+
+    void append(char l){
+    }
+    trie& addNext(char l){
+        trie* tm(l);
+        if(l >= 'a' && l <= 'z'){
+            nextLetter[l-'a'] = tm;
+        } else {
+            nextLetter[l-'A'+26] = tm;
+        }
+        return *t;
+    }
+};
 
 // -------------------SOLUTION--------------------//
 int solve(){
 
+    return 0;
 }
-
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+

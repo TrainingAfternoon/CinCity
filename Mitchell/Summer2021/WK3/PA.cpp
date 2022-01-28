@@ -27,15 +27,34 @@ using namespace std;
 const double PI = 3.1415926585323;
 const int MOD = 1e9 + 7;
 
-
 // -------------------SOLUTION--------------------//
 int solve(){
 
-}
+    int n, m;
+    string a, b;
+    cin>>n;
+    V<pair<int, string>> cups;
+    for(int i = 0; i < n; i++){
+        cin>>a>>b;
+        try{
+            m = stoi(a);
+            cups.pb(mp(m, b));
+        }catch(...){
+            m = stoi(b);
+            cups.pb(mp(m*2, a));
+        }
+    }
+    sort(cups.begin(), cups.end());
+    for(pair<int, string> cup : cups){
+        cout<<cup.second<<nn;
+    }
 
+    return 0;
+}
 
 // -------------------MAIN CODE-------------------//
 int main(){
     solve();
     return 0;
 }
+
