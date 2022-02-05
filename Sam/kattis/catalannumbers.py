@@ -1,10 +1,6 @@
 #Implemented in Python to abuse its natural bigint because 5000! is nasty in c++ without GMP
 import math
 
-def god(n):
-    #greatest odd divisor
-    pass
-
 cache = {}
 def factorial(n):
     return cache.setdefault(n,math.factorial(n))

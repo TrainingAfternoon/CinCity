@@ -7,7 +7,6 @@ int get_key(char c) {
 struct Node {
     char symbol;
     struct Node *children[52];
-    short duplicate_weight;
     bool is_word;
 } typedef node;
 
@@ -15,7 +14,6 @@ node *get_node_s(char s) {
     node *n = new node;
     n->symbol = s;
     n->is_word = false;
-    n->duplicate_weight = 1;
     return n;
 }
 
@@ -33,7 +31,19 @@ void add_word(node *head, string& word) {
         }
         head = head->children[get_key(word.front())];
         word.erase(0,1);
-        return add_worse(head, word);
+        return add_word(head, word);
+    }
+}
+
+bool is_word(node *head, string& word) {
+    if(head == NULL) {
+        return false;
+    }
+    if(!word.empty()) {
+        word.erase(0,1);
+        return is_word(head->children[get_key(word.front())], word);
+    } else {
+        return head->is_word;
     }
 }
 
@@ -45,4 +55,3 @@ void free(node *head) {
     }
     delete head;
 }
-

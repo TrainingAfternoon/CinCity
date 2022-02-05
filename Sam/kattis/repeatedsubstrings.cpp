@@ -54,7 +54,7 @@ static inline void trim(std::string &s) {ltrim(s);rtrim(s);}
 void fastinput(){ios_base::sync_with_stdio(0); cout.tie(0); cin.tie(0);}
 
 // -------------------MAIN CODE-------------------//
-
+// https://speedyguy17.info/icpc/data/rmrc/2014/talk.pdf
 int get_key(char c) {
     short offset = (c <= 90) ? 65 : 71;
     return c - offset;
